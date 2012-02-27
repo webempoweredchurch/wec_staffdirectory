@@ -1,0 +1,697 @@
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>0</langChildren>
+  </meta>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+        <sheetTitle>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sheet_main</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+		  <what_to_display>
+			<TCEforms>
+			  <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.what_to_display</label>
+			  <onChange>reload</onChange>
+			  <config>
+				<type>select</type>
+				<items type="array">
+					<numIndex index="0" type="array">
+						<numIndex index="0">LIST BY LINE</numIndex>
+						<numIndex index="1">LIST</numIndex>
+					</numIndex>
+					<numIndex index="1" type="array">
+						<numIndex index="0">LIST BY 2 COLUMNS</numIndex>
+						<numIndex index="1">LIST COLUMN</numIndex>
+					</numIndex>
+					<numIndex index="2" type="array">
+						<numIndex index="0">LIST BRIEF</numIndex>
+						<numIndex index="1">LIST BRIEF</numIndex>
+					</numIndex>
+					<numIndex index="3" type="array">
+						<numIndex index="0">LIST VERBOSE</numIndex>
+						<numIndex index="1">LIST VERBOSE</numIndex>
+					</numIndex>
+					<numIndex index="5" type="array">
+						<numIndex index="0">LIST CUSTOM</numIndex>
+						<numIndex index="1">LIST CUSTOM</numIndex>
+					</numIndex>
+					<numIndex index="6" type="array">
+						<numIndex index="0">RANDOM</numIndex>
+						<numIndex index="1">RANDOM</numIndex>
+					</numIndex>					
+					<numIndex index="4" type="array">
+						<numIndex index="0">SINGLE</numIndex>
+						<numIndex index="1">SINGLE</numIndex>
+					</numIndex>
+				</items>
+				<maxitems>1</maxitems>
+				<size>1</size>
+				<default>LIST</default>
+				<selectedListStyle>width:200px</selectedListStyle>
+				<itemListStyle>width:200px</itemListStyle>
+			  </config>
+			</TCEforms>
+		  </what_to_display>
+          <title>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.title</label>
+			  <displayCond>FIELD:what_to_display:!IN:SINGLE,RANDOM</displayCond>
+              <config>
+                <type>input</type>
+                <size>50</size>
+              </config>
+            </TCEforms>
+          </title>		
+          <show_department>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.show_department</label>
+			  <displayCond>FIELD:what_to_display:!IN:SINGLE</displayCond>
+              <config>
+                <type>input</type>
+                <size>50</size>
+                <default></default>
+              </config>
+            </TCEforms>
+          </show_department>
+          <display_random>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.display_random</label>
+			  <displayCond>FIELD:what_to_display:=:RANDOM</displayCond>
+              <config>
+				<type>select</type>
+				<items type="array">
+					<numIndex index="0" type="array">
+						<numIndex index="0">Everytime</numIndex>
+						<numIndex index="1">EVERYTIME</numIndex>
+					</numIndex>
+					<numIndex index="1" type="array">
+						<numIndex index="0">Every day</numIndex>
+						<numIndex index="1">EVERYDAY</numIndex>
+					</numIndex>
+					<numIndex index="2" type="array">
+						<numIndex index="0">Every week</numIndex>
+						<numIndex index="1">EVERYWEEK</numIndex>
+					</numIndex>
+					<numIndex index="3" type="array">
+						<numIndex index="0">Every month</numIndex>
+						<numIndex index="1">EVERYMONTH</numIndex>
+					</numIndex>					
+				</items>
+				<maxitems>1</maxitems>
+				<size>1</size>
+				<default>EVERYTIME</default>
+              </config>			
+			</TCEforms>
+		  </display_random>
+          <single_pid>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.single_pid</label>
+			  <displayCond>FIELD:what_to_display:!IN:SINGLE,RANDOM</displayCond>
+			<config>
+				<type>group</type>
+				<internal_type>db</internal_type>
+				<allowed>pages</allowed>
+				<size>1</size>
+				<maxitems>1</maxitems>
+				<minitems>0</minitems>
+				<show_thumbs>0</show_thumbs>
+			</config>
+            </TCEforms>
+          </single_pid>
+          <back_pid>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.back_pid</label>
+			  <displayCond>FIELD:what_to_display:=:SINGLE</displayCond>
+			<config>
+				<type>group</type>
+				<internal_type>db</internal_type>
+				<allowed>pages</allowed>
+				<size>1</size>
+				<maxitems>1</maxitems>
+				<minitems>0</minitems>
+				<show_thumbs>0</show_thumbs>
+			</config>
+            </TCEforms>
+          </back_pid>
+		  <template_file>
+		    <TCEforms>
+		      <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.template_file</label>
+		      <config>
+		        <type>group</type>
+		        <internal_type>file</internal_type>
+		        <allowed>tmpl,html</allowed>
+		        <max_size>100</max_size>
+		        <uploadfolder>uploads/tx_wecstaffdirectory/</uploadfolder>
+		        <maxitems>1</maxitems>
+		        <size>1</size>
+		        <selectedListStyle>width:200px</selectedListStyle>
+		      </config>
+		    </TCEforms>
+	      </template_file>
+		  <template_reference>
+		    <TCEforms>
+		      <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.template_reference</label>
+              <config>
+                <type>input</type>
+                <size>50</size>
+                <max_size>100</max_size>
+				<wizards type="array">
+					<_PADDING>2</_PADDING>
+					<link type="array">
+						<type>popup</type>
+						<title>Link</title>
+						<icon>link_popup.gif</icon>
+						<script>browse_links.php?mode=wizard&amp;act=file</script>
+						<params type="array">
+							<blindLinkOptions>page,url,spec</blindLinkOptions>
+							<allowedExtensions>htm,html,tmpl,tpl</allowedExtensions>
+						</params>
+						<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+					</link>
+				</wizards>
+              </config>
+		    </TCEforms>
+	      </template_reference>
+  		  <storagePID>
+		  	<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:lang/locallang_general.php:LGL.startingpoint</label>
+			<config>
+				<type>group</type>
+				<internal_type>db</internal_type>
+				<allowed>pages</allowed>
+				<size>3</size>
+				<maxitems>16</maxitems>
+				<minitems>0</minitems>
+				<show_thumbs>1</show_thumbs>
+			</config>
+		  	</TCEforms>
+		  </storagePID>
+      </el>
+    </ROOT>
+    </sDEF>
+
+    <s_display>
+    <ROOT>
+    <TCEforms>
+      <sheetTitle>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sheet_display</sheetTitle>
+    </TCEforms>
+     <type>array</type>
+      <el>
+         <sort_order>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order</label>
+              <config>
+              <type>select</type>
+              <items type="array">
+                <numIndex index="4" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.custom_backend_sorting</numIndex>
+                  <numIndex index="1">5</numIndex>
+                </numIndex>
+                <numIndex index="5" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.custom_display_order</numIndex>
+                  <numIndex index="1">6</numIndex>
+                </numIndex>	
+                <numIndex index="0" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.last_name</numIndex>
+                  <numIndex index="1">1</numIndex>
+                </numIndex>
+                <numIndex index="3" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.first_name</numIndex>
+                  <numIndex index="1">4</numIndex>
+                </numIndex>
+                <numIndex index="12" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.name</numIndex>
+                  <numIndex index="1">13</numIndex>
+                </numIndex>
+                <numIndex index="1" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.department</numIndex>
+                  <numIndex index="1">2</numIndex>
+                </numIndex>
+                <numIndex index="2" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.start_date</numIndex>
+                  <numIndex index="1">3</numIndex>
+                </numIndex>
+                <numIndex index="6" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.team</numIndex>
+                  <numIndex index="1">7</numIndex>
+                </numIndex>
+                <numIndex index="7" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.misc</numIndex>
+                  <numIndex index="1">8</numIndex>
+                </numIndex>
+                <numIndex index="8" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.city</numIndex>
+                  <numIndex index="1">9</numIndex>
+                </numIndex>
+                <numIndex index="9" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.zone</numIndex>
+                  <numIndex index="1">10</numIndex>
+                </numIndex>
+                <numIndex index="10" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.zip</numIndex>
+                  <numIndex index="1">11</numIndex>
+                </numIndex>
+                <numIndex index="11" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.country</numIndex>
+                  <numIndex index="1">12</numIndex>
+                </numIndex>
+             </items>
+              <maxitems>1</maxitems>
+              <size>1</size>
+              <default>1</default>
+              </config>
+            </TCEforms>
+         </sort_order>
+         <sort_order_ascdesc>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order_ascdesc</label>
+              <config>
+              <type>select</type>
+              <items type="array">
+                <numIndex index="0" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order_ascdesc.ascending</numIndex>
+                  <numIndex index="1">ASC</numIndex>
+                </numIndex>
+                <numIndex index="1" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order_ascdesc.descending</numIndex>
+                  <numIndex index="1">DESC</numIndex>
+                </numIndex>
+              </items>
+              <maxitems>1</maxitems>
+              <size>1</size>
+              <default>ASC</default>
+              </config>
+            </TCEforms>
+         </sort_order_ascdesc>
+         <sort_options>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_options</label>
+              <config>
+              <type>select</type>
+              <items type="array">
+                <numIndex index="0" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.last_name</numIndex>
+                  <numIndex index="1">name</numIndex>
+                </numIndex>
+                <numIndex index="3" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.first_name</numIndex>
+                  <numIndex index="1">first_name</numIndex>
+                </numIndex>
+                <numIndex index="6" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.name</numIndex>
+                  <numIndex index="1">full_name</numIndex>
+                </numIndex>
+                <numIndex index="1" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.department</numIndex>
+                  <numIndex index="1">department</numIndex>
+                </numIndex>
+                <numIndex index="2" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.start_date</numIndex>
+                  <numIndex index="1">start_date</numIndex>
+                </numIndex>
+                <numIndex index="4" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.custom_backend_sorting</numIndex>
+                  <numIndex index="1">backend_sorting</numIndex>
+                </numIndex>
+                <numIndex index="5" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sort_order.custom_display_order</numIndex>
+                  <numIndex index="1">display_order</numIndex>
+                </numIndex>
+              </items>
+              <maxitems>6</maxitems>
+              <size>6</size>
+              <multiple>1</multiple>
+              </config>
+            </TCEforms>
+         </sort_options>
+         <show_search>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.show_search</label>
+              <config>
+                <type>check</type>
+                <default>0</default>
+              </config>
+            </TCEforms>
+          </show_search>
+         <show_listheader>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.show_listheader</label>
+              <config>
+                <type>check</type>
+                <default>0</default>
+              </config>
+            </TCEforms>
+         </show_listheader>
+         <show_deptSelector>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.show_deptSelector</label>
+              <config>
+                <type>check</type>
+                <default>0</default>
+              </config>
+            </TCEforms>
+         </show_deptSelector>
+         <num_per_page>
+            <TCEforms>
+              <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.num_per_page</label>
+              <config>
+                <type>input</type>
+                <size>4</size>
+                <default>0</default>
+              </config>
+            </TCEforms>
+          </num_per_page>
+      </el>
+    </ROOT>
+    </s_display>
+
+    <s_fields>
+    <ROOT>
+    <TCEforms>
+      <sheetTitle>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sheet_fields</sheetTitle>
+    </TCEforms>
+      <type>array</type>
+        <el>
+          <directory_fields>
+            <TCEforms>
+            <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.directory_fields</label>
+            <config>
+              <type>select</type>
+              <items type="array">
+                <numIndex index="1" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_name_label</numIndex>
+                  <numIndex index="1">name</numIndex>
+                </numIndex>
+                <numIndex index="2" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_position_title_label</numIndex>
+                  <numIndex index="1">position_title</numIndex>
+                </numIndex>
+                <numIndex index="3" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_position_description_label</numIndex>
+                  <numIndex index="1">position_description</numIndex>
+                </numIndex>
+                <numIndex index="4" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_department_label</numIndex>
+                  <numIndex index="1">department</numIndex>
+                </numIndex>
+                <numIndex index="5" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_team_label</numIndex>
+                  <numIndex index="1">team</numIndex>
+                </numIndex>
+                <numIndex index="6" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_email_label</numIndex>
+                  <numIndex index="1">email</numIndex>
+                </numIndex>
+                <numIndex index="7" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_telephone_label</numIndex>
+                  <numIndex index="1">telephone</numIndex>
+                </numIndex>
+                <numIndex index="8" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_cellphone_label</numIndex>
+                  <numIndex index="1">cellphone</numIndex>
+                </numIndex>
+                <numIndex index="9" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_fax_label</numIndex>
+                  <numIndex index="1">fax</numIndex>
+                </numIndex>
+                <numIndex index="10" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_address_label</numIndex>
+                  <numIndex index="1">address</numIndex>
+                </numIndex>
+                <numIndex index="11" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_country_label</numIndex>
+                  <numIndex index="1">country</numIndex>
+                </numIndex>
+                <numIndex index="12" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_biography_label</numIndex>
+                  <numIndex index="1">biography</numIndex>
+                </numIndex>
+                <numIndex index="13" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_news_label</numIndex>
+                  <numIndex index="1">news</numIndex>
+                </numIndex>
+                <numIndex index="14" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_photo_main_label</numIndex>
+                  <numIndex index="1">photo_main</numIndex>
+                </numIndex>
+                <numIndex index="15" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_photos_etc_label</numIndex>
+                  <numIndex index="1">photos_etc</numIndex>
+                </numIndex>
+                <numIndex index="16" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_start_date_label</numIndex>
+                  <numIndex index="1">start_date</numIndex>
+                </numIndex>
+                <numIndex index="18" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_social_contact1_label</numIndex>
+                  <numIndex index="1">social_contact1</numIndex>
+                </numIndex>
+                <numIndex index="19" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_social_contact2_label</numIndex>
+                  <numIndex index="1">social_contact2</numIndex>
+                </numIndex>
+                <numIndex index="20" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_social_contact3_label</numIndex>
+                  <numIndex index="1">social_contact3</numIndex>
+                </numIndex>
+                <numIndex index="17" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_misc_label</numIndex>
+                  <numIndex index="1">misc</numIndex>
+                </numIndex>
+              </items>
+              <maxitems>20</maxitems>
+              <size>10</size>
+              <multiple>1</multiple>
+              <selectedListStyle>width:220px</selectedListStyle>
+              <itemListStyle>width:220px</itemListStyle>
+            </config>
+            </TCEforms>
+          </directory_fields>
+          <personalpage_fields>
+            <TCEforms>
+            <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.personalpage_fields</label>
+            <config>
+              <type>select</type>
+              <items type="array">
+                <numIndex index="1" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_name_label</numIndex>
+                  <numIndex index="1">name</numIndex>
+                </numIndex>
+                <numIndex index="2" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_position_title_label</numIndex>
+                  <numIndex index="1">position_title</numIndex>
+                </numIndex>
+                <numIndex index="3" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_position_description_label</numIndex>
+                  <numIndex index="1">position_description</numIndex>
+                </numIndex>
+                <numIndex index="4" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_department_label</numIndex>
+                  <numIndex index="1">department</numIndex>
+                </numIndex>
+                <numIndex index="5" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_team_label</numIndex>
+                  <numIndex index="1">team</numIndex>
+                </numIndex>
+                <numIndex index="6" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_email_label</numIndex>
+                  <numIndex index="1">email</numIndex>
+                </numIndex>
+                <numIndex index="7" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_telephone_label</numIndex>
+                  <numIndex index="1">telephone</numIndex>
+                </numIndex>
+                <numIndex index="8" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_cellphone_label</numIndex>
+                  <numIndex index="1">cellphone</numIndex>
+                </numIndex>
+                <numIndex index="9" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_fax_label</numIndex>
+                  <numIndex index="1">fax</numIndex>
+                </numIndex>
+                <numIndex index="10" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_address_label</numIndex>
+                  <numIndex index="1">address</numIndex>
+                </numIndex>
+                <numIndex index="11" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_country_label</numIndex>
+                  <numIndex index="1">country</numIndex>
+                </numIndex>
+                <numIndex index="12" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_biography_label</numIndex>
+                  <numIndex index="1">biography</numIndex>
+                </numIndex>
+                <numIndex index="13" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_news_label</numIndex>
+                  <numIndex index="1">news</numIndex>
+                </numIndex>
+                <numIndex index="14" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_photo_main_label</numIndex>
+                  <numIndex index="1">photo_main</numIndex>
+                </numIndex>
+                <numIndex index="15" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_photos_etc_label</numIndex>
+                  <numIndex index="1">photos_etc</numIndex>
+                </numIndex>
+                <numIndex index="16" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_start_date_label</numIndex>
+                  <numIndex index="1">start_date</numIndex>
+                </numIndex>
+                <numIndex index="17" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_misc_label</numIndex>
+                  <numIndex index="1">misc</numIndex>
+                </numIndex>
+                <numIndex index="18" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_map_label</numIndex>
+                  <numIndex index="1">map</numIndex>
+                </numIndex>
+              </items>
+              <maxitems>20</maxitems>
+              <size>12</size>
+              <multiple>1</multiple>
+              <selectedListStyle>width:220px</selectedListStyle>
+              <itemListStyle>width:220px</itemListStyle>
+            </config>
+            </TCEforms>
+          </personalpage_fields>
+          <editpersonalpage_fields>
+            <TCEforms>
+            <label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.editpersonalpage_fields</label>
+            <config>
+              <type>select</type>
+              <items type="array">
+                <numIndex index="1" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_name_label</numIndex>
+                  <numIndex index="1">name</numIndex>
+                </numIndex>
+                <numIndex index="2" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_position_title_label</numIndex>
+                  <numIndex index="1">position_title</numIndex>
+                </numIndex>
+                <numIndex index="3" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_position_description_label</numIndex>
+                  <numIndex index="1">position_description</numIndex>
+                </numIndex>
+                <numIndex index="4" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_department_label</numIndex>
+                  <numIndex index="1">department</numIndex>
+                </numIndex>
+                <numIndex index="5" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_team_label</numIndex>
+                  <numIndex index="1">team</numIndex>
+                </numIndex>
+                <numIndex index="6" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_email_label</numIndex>
+                  <numIndex index="1">email</numIndex>
+                </numIndex>
+                <numIndex index="7" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_telephone_label</numIndex>
+                  <numIndex index="1">telephone</numIndex>
+                </numIndex>
+                <numIndex index="8" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_cellphone_label</numIndex>
+                  <numIndex index="1">cellphone</numIndex>
+                </numIndex>
+                <numIndex index="9" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_fax_label</numIndex>
+                  <numIndex index="1">fax</numIndex>
+                </numIndex>
+                <numIndex index="10" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_address_label</numIndex>
+                  <numIndex index="1">address</numIndex>
+                </numIndex>
+                <numIndex index="11" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_country_label</numIndex>
+                  <numIndex index="1">country</numIndex>
+                </numIndex>
+                <numIndex index="12" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_biography_label</numIndex>
+                  <numIndex index="1">biography</numIndex>
+                </numIndex>
+                <numIndex index="13" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_news_label</numIndex>
+                  <numIndex index="1">news</numIndex>
+                </numIndex>
+                <numIndex index="14" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_photo_main_label</numIndex>
+                  <numIndex index="1">photo_main</numIndex>
+                </numIndex>
+                <numIndex index="15" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_photos_etc_label</numIndex>
+                  <numIndex index="1">photos_etc</numIndex>
+                </numIndex>
+                <numIndex index="16" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_start_date_label</numIndex>
+                  <numIndex index="1">start_date</numIndex>
+                </numIndex>
+                <numIndex index="17" type="array">
+                  <numIndex index="0">LLL:EXT:wec_staffdirectory/pi1/locallang.xml:form_misc_label</numIndex>
+                  <numIndex index="1">misc</numIndex>
+                </numIndex>
+              </items>
+              <maxitems>20</maxitems>
+              <size>12</size>
+              <multiple>1</multiple>
+              <selectedListStyle>width:220px</selectedListStyle>
+              <itemListStyle>width:220px</itemListStyle>
+            </config>
+            </TCEforms>
+          </editpersonalpage_fields>
+      </el>
+    </ROOT>
+    </s_fields>
+
+    <s_administrator>
+    <ROOT>
+    <TCEforms>
+      <sheetTitle>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.sheet_admin</sheetTitle>
+    </TCEforms>
+      <type>array</type>
+        <el>
+          <administrator_users>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.administrator_users</label>
+              <config>
+                <type>input</type>
+                <size>40</size>
+              </config>
+            </TCEforms>
+          </administrator_users>
+          <administrator_groups>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.administrator_groups</label>
+              <config>
+                <type>input</type>
+                <size>40</size>
+              </config>
+            </TCEforms>
+          </administrator_groups>
+          <staff_can_edit>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.staff_can_edit</label>
+              <config>
+                <type>check</type>
+                <default>1</default>
+              </config>
+            </TCEforms>
+          </staff_can_edit>
+          <staff_can_add>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.staff_can_add</label>
+              <config>
+                <type>check</type>
+                <default>0</default>
+              </config>
+            </TCEforms>
+          </staff_can_add>
+          <staff_can_delete>
+            <TCEforms><label>LLL:EXT:wec_staffdirectory/locallang_db.xml:wec_staffdirectory.pi_flexform.staff_can_delete</label>
+              <config>
+                <type>check</type>
+                <default>0</default>
+              </config>
+            </TCEforms>
+          </staff_can_delete>
+        </el>
+    </ROOT>
+    </s_administrator>
+
+  </sheets>
+</T3DataStructure>

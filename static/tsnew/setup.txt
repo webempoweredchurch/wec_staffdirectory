@@ -1,0 +1,147 @@
+includeLibs.ts_wecstaffdirectory = EXT:wec_staffdirectory/pi1/class.tx_wecstaffdirectory_pi1.php
+
+[userFunc = user_isStaffDirectoryNotCached()] 
+plugin.tx_wecstaffdirectory_pi1 = USER_INT
+[global]
+
+plugin.tx_wecstaffdirectory_pi1 {
+    general_stdWrap {
+       parseFunc < tt_content.text.20.parseFunc
+    }
+
+	templateFile 		= {$plugin.tx_wecstaffdirectory_pi1.templateFile}
+	baseCSSFile 		= {$plugin.tx_wecstaffdirectory_pi1.baseCSSFile}
+	cssFile		 		= {$plugin.tx_wecstaffdirectory_pi1.cssFile}
+
+  	imagePhotoBlank		= {$plugin.tx_wecstaffdirectory_pi1.imagePhotoBlank}
+  	imagePhotoBlank2	= {$plugin.tx_wecstaffdirectory_pi1.imagePhotoBlank2}
+
+  	imageWidth			= {$plugin.tx_wecstaffdirectory_pi1.imageWidth}
+  	imageHeight			= {$plugin.tx_wecstaffdirectory_pi1.imageHeight}
+  	smallImageWidth		= {$plugin.tx_wecstaffdirectory_pi1.smallImageWidth}
+  	smallImageHeight	= {$plugin.tx_wecstaffdirectory_pi1.smallImageHeight}
+  	etcImageWidth		= {$plugin.tx_wecstaffdirectory_pi1.etcImageWidth}
+  	etcImageHeight		= {$plugin.tx_wecstaffdirectory_pi1.etcImageHeight}
+
+  	emailIcon			= {$plugin.tx_wecstaffdirectory_pi1.emailIcon}
+
+	sortFieldForDept	= {$plugin.tx_wecstaffdirectory_pi1.sortFieldForDept}
+	useFEPhoto			= {$plugin.tx_wecstaffdirectory_pi1.useFEPhoto}
+	altImagePath		= {$plugin.tx_wecstaffdirectory_pi1.altImagePath}
+	social_contact1Icon	= {$plugin.tx_wecstaffdirectory_pi1.social_contact1Icon}
+	social_contact2Icon	= {$plugin.tx_wecstaffdirectory_pi1.social_contact2Icon}
+	social_contact3Icon	= {$plugin.tx_wecstaffdirectory_pi1.social_contact3Icon}
+	
+	multiplePluginsPerPage	= {$plugin.tx_wecstaffdirectory_pi1.multiplePluginsPerPage}
+
+ 	main_photo = IMAGE
+ 	main_photo.file {
+ 		height = {$plugin.tx_wecstaffdirectory_pi1.imageHeight}
+ 		width = {$plugin.tx_wecstaffdirectory_pi1.imageWidth}
+ 		quality = 80
+ 	}
+ 	main_photo_small = IMAGE
+ 	main_photo_small.file {
+ 		width = {$plugin.tx_wecstaffdirectory_pi1.smallImageWidth}
+ 		height = {$plugin.tx_wecstaffdirectory_pi1.smallImageHeight}
+ 		quality = 70
+ 	}
+ 	photos_etc = IMAGE
+ 	photos_etc.file {
+ 		width = {$plugin.tx_wecstaffdirectory_pi1.etcImageWidth}
+ 		height = {$plugin.tx_wecstaffdirectory_pi1.etcImageHeight}
+ 		quality = 80
+ 	}
+
+	social_contact1 = COA
+	social_contact1 {
+		10 = IMAGE
+		10 {
+			file = {$plugin.tx_wecstaffdirectory_pi1.social_contact1Icon}
+			width = 16
+			height = 16
+			stdWrap.dataWrap = <a href="http://twitter.com/{field : social_contact1}"> | </a>
+		}
+	}
+	
+	social_contact2 = COA
+	social_contact2 {
+		10 = IMAGE
+		10 {
+			file = {$plugin.tx_wecstaffdirectory_pi1.social_contact2Icon}
+			width = 16
+			height = 16
+			stdWrap.dataWrap = <a href="http://facebook.com/people/@/{field : social_contact2}"> | </a>
+		}		
+	}	
+	
+	social_contact3 = COA
+	social_contact3 {
+		10 = IMAGE
+		10 {
+			file = {$plugin.tx_wecstaffdirectory_pi1.social_contact3Icon}
+			width = 16
+			height = 16
+			stdWrap.dataWrap = <a href="http://linkedin.com/pub/{field : social_contact3}"> | </a>
+		}
+	}	
+	
+	biographyShort_stdWrap.crop = 350|...|1
+	newsShort_stdWrap.crop = 350|...|1
+
+    # substitute pagetitle with title of staff page
+    substitutePagetitle = 1
+
+	isLoaded = yes
+	isOldTemplate = 0
+	
+	map {
+		# @description	API Key for Google Maps.
+		# @see	http://www.google.com/apis/maps/signup.html
+		apiKey =
+		
+		# @description	Width of the map.
+		mapWidth = 300
+		
+		# @description	Height of the map.
+		mapHeight = 300
+		
+		# @description	Possible control sizes for the map.	 Options are large, small, zoomonly, and none.
+		controlSize = small
+		
+		# @description	Boolean defining whether overview map should be shown.
+		showOverviewMap = 0
+		
+		# @description	Boolean defining whether the map type control should be shown.
+		showMapType = 0
+		
+		# @description	Boolean definine whether the scale should be shown.
+		showScale = 0
+		
+		# @description	Boolean defining whether the info window should be opened when the page loads.
+		showInfoOnLoad = 0
+		
+		# @description	Boolean defining whether directions should be available.
+		showDirections = 1
+		
+		# @description	Boolean defining whether written directions should be shown in addition to the map.
+		showWrittenDirections = 1
+		
+		# @description	Boolean defining whether an address should be prefilled for logged in users.
+		prefillAddress = 1
+		
+		# @description	Default zoom level. If not set, autozoom will be used.
+		zoomLevel = 
+		
+		# @description	Default center latitude. If not set, autocenter will be used.
+		centerLat = 
+		
+		# @description	Default center longitude. If not set, autocenter will be used.
+		centerLong = 
+	}
+}
+
+plugin.tx_wecstaffdirectory_pi1._CSS_DEFAULT_STYLE (
+
+) // END CSS_DEFAULT_STYLE
+

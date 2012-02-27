@@ -1,0 +1,51 @@
+plugin.tx_wecstaffdirectory_pi1 {
+#cat=plugin.tx_wecstaffdirectory_pi1/file/1; type=file[html,htm,tmpl,txt]; label= Template File: HTML template file for display of the Discussion Forum.
+  templateFile 		= EXT:wec_staffdirectory/template/wecstaffdirectory.tmpl
+
+#cat=plugin.tx_wecstaffdirectory_pi1/file/2; type=file[css]; label= base plugin CSS File
+  baseCSSFile 		= EXT:wec_staffdirectory/template/pluginstyles.css
+
+#cat=plugin.tx_wecstaffdirectory_pi1/file/3; type=file[css]; label= Staff Directory CSS File
+  cssFile 			= EXT:wec_staffdirectory/template/wecstaffdirectory.css
+
+#cat=plugin.tx_wecstaffdirectory_pi1/file/2; type=string; label= Blank Photo (Male)
+  imagePhotoBlank   = EXT:wec_staffdirectory/res/photoblank.gif
+#cat=plugin.tx_wecstaffdirectory_pi1/file/2; type=string; label= Blank Photo (Female)
+  imagePhotoBlank2   = EXT:wec_staffdirectory/res/photoblank_f.gif
+#cat=plugin.tx_wecstaffdirectory_pi1/file/3; type=string; label= Email Icon Image
+  emailIcon		    = EXT:wec_staffdirectory/res/email_icon.jpg
+
+#cat=plugin.tx_wecstaffdirectory_pi1/etc/1; type=options[display_order,sorting_backend,last_name,first_name,name]; label= Sorting for Listing By Department
+  sortFieldForDept	=	last_name
+
+#cat=plugin.tx_wecstaffdirectory_pi1/etc/2; type=boolean; label= Use FE-User photo first instead of Staff Info photo
+  useFEPhoto		=	0
+
+#cat=plugin.tx_wecstaffdirectory_pi1/file/4; type=string; label= Upload folder for images
+  altImagePath 		= uploads/tx_wecstaffdirectory/
+
+#cat=plugin.tx_wecstaffdirectory_pi1/dims/3a; type=string; label= Photo Width
+  imageWidth		= 160m
+#cat=plugin.tx_wecstaffdirectory_pi1/dims/3b; type=string; label= Photo Height
+  imageHeight		= 
+#cat=plugin.tx_wecstaffdirectory_pi1/dims/3c; type=string; label= Small Photo Width
+  smallImageWidth	= 80m
+#cat=plugin.tx_wecstaffdirectory_pi1/dims/3d; type=string; label= Small Photo Height
+  smallImageHeight	= 
+#cat=plugin.tx_wecstaffdirectory_pi1/dims/3e; type=string; label= Etc Photo Width
+  etcImageWidth		= 140m
+#cat=plugin.tx_wecstaffdirectory_pi1/dims/3f; type=string; label= Etc Photo Height
+  etcImageHeight	=
+
+#cat=plugin.tx_wecstaffdirectory_pi1/file/4a; type=string; label= Social Contact #1 Icon
+  social_contact1Icon	= EXT:wec_staffdirectory/res/twitter_icon.png
+#cat=plugin.tx_wecstaffdirectory_pi1/file/4b; type=string; label= Social Contact #2 Icon
+  social_contact2Icon	= EXT:wec_staffdirectory/res/facebook_icon.png
+#cat=plugin.tx_wecstaffdirectory_pi1/file/4c; type=string; label= Social Contact #3 Icon
+  social_contact3Icon	= EXT:wec_staffdirectory/res/linkedin_icon.png
+
+#cat=plugin.tx_wecstaffdirectory_pi1/etc/3; type=boolean; label= Have multiple staff directory plugins per page
+  multiplePluginsPerPage = 0
+
+}
+

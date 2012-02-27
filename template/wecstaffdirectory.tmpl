@@ -1,0 +1,490 @@
+<!--
+	Templates For The wec_staffdirectory extension:
+
+		###TEMPLATE_STAFF_LIST	 -- the main staff directory
+		###TEMPLATE_STAFF_SINGLE -- the personal staff page
+		###TEMPLATE_EDITFORM 	 -- the form for editting staff page/info
+-->
+
+<!--
+=====================================================================================================
+###TEMPLATE_STAFF_LIST### begin
+=====================================================================================================
+-->
+<div class="tx_wecstaffdirectory_pi1 pluginContent">
+	<!-- ###SHOW_HEADER### begin-->
+	<div class="pluginHeader">
+		<h3>###TITLE###</h3>
+		<!-- ###SHOW_ERROR### begin--><div class="error">###FORM_ERROR_TEXT###</div><!-- ###SHOW_ERROR### end-->
+	 	<!-- ###SHOW_RESPONSE### begin--><div class="notice">###RESPONSE_TEXT###</div><div class="back">###SHOW_BACK_BTN###</div><!-- ###SHOW_RESPONSE### end-->
+	</div>
+	<!-- ###SHOW_HEADER### end-->
+
+	<div class="pluginNav floatRight">
+		###SHOW_ADD_BTN### 
+	</div>
+	<!-- ###SHOW_NAVIGATION### begin-->
+	<div class="pluginNav">
+		<div class="box floatLeft">
+			<!-- ###SHOW_SORT_MENU### begin-->###SORT_MENU###<!-- ###SHOW_SORT_MENU### end-->	
+		</div>
+		<div class="box floatLeft">
+			<!-- ###SHOW_DEPARTMENT_MENU### begin-->###DEPARTMENT_DROPDOWN_MENU###<!-- ###SHOW_DEPARTMENT_MENU### end-->
+		</div>
+		<div class="box floatRight">
+			<form class="selectForm" name="searchForm" action="###ACTION_URL###" method="post">
+				###SEARCH### ###SEARCH_FULLTEXT### ###SEARCH_BUTTON###
+			</form>
+		</div>
+	</div>
+	<!-- ###SHOW_NAVIGATION### end-->
+	
+	<div class="pluginSection">
+	  <ul class="entries">
+		<!-- ###SHOW_LISTING_HEADER### begin -->
+		<li class="listHeader" >
+			<!-- ###SHOW_PHOTO_MAIN### begin --><span class="photoSmallDisplay floatLeft">###PHOTO_SMALL_TEXT###&nbsp;</span> <!-- ###SHOW_PHOTO_MAIN### end -->
+			<!-- ###SHOW_NAME### begin --> 	 	<span class="nameDisplay floatLeft isBold">###NAME_TEXT###</span><!-- ###SHOW_NAME### end -->
+			<!-- ###SHOW_DEPARTMENT### begin --><span class="deptDisplay floatLeft">###DEPARTMENT_TEXT###</span> <!-- ###SHOW_DEPARTMENT### end -->
+			<!-- ###SHOW_POSITION_TITLE### begin --> <span class="posDisplay floatLeft">###POSITION_TITLE_TEXT###</span>	<!-- ###SHOW_POSITION_TITLE### end -->
+			<!-- ###SHOW_TELEPHONE### begin --> <span class="phoneDisplay floatLeft">###TELEPHONE_TEXT###</span><!-- ###SHOW_TELEPHONE### end -->
+			<!-- ###SHOW_CELLPHONE### begin --> <span class="cellDisplay floatLeft">###CELLPHONE_TEXT###</span><!-- ###SHOW_CELLPHONE### end -->
+			<!-- ###SHOW_FAX### begin -->  		<span class="faxDisplay floatLeft">###FAX_TEXT###</span><!-- ###SHOW_FAX### end -->
+			<!-- ###SHOW_MISC### begin --> 		<span class="miscDisplay floatLeft">###MISC_TEXT###</span> <!-- ###SHOW_MISC### end -->
+			<!-- ###SHOW_EMAIL### begin --> 	<span class="emailDisplay floatLeft">###EMAIL_TEXT###</span> <!-- ###SHOW_EMAIL### end -->
+			<!-- ###SHOW_SOCIAL_CONTACT1### begin --> 	<span class="social1Display floatLeft">###SOCIAL_CONTACT1_TEXT###</span> <!-- ###SHOW_SOCIAL_CONTACT1### end -->
+			<!-- ###SHOW_SOCIAL_CONTACT2### begin --> 	<span class="social2Display floatLeft">###SOCIAL_CONTACT2_TEXT###</span> <!-- ###SHOW_SOCIAL_CONTACT2### end -->
+			<!-- ###SHOW_SOCIAL_CONTACT3### begin --> 	<span class="social3Display floatLeft">###SOCIAL_CONTACT3_TEXT###</span> <!-- ###SHOW_SOCIAL_CONTACT3### end -->
+			<!-- ###SHOW_START_DATE### begin --> 	<span class="dateDisplay floatLeft">###START_DATE_TEXT###</span> <!-- ###SHOW_START_DATE### end -->
+			<div class="vspacer"> </div>
+		</li>
+		<!-- ###SHOW_LISTING_HEADER### end -->
+		
+		###STAFF_LISTING_CONTENT###
+	  </ul>
+	</div>		
+		
+	<!--###DEPARTMENT_HEADER### begin
+		Template used for each department line in listing
+	-->
+	<li class="deptHeader">
+		<span class="title">###DEPARTMENT_IMAGE### ###DEPARTMENT_TITLE###</span>
+		<span class="description">###DEPARTMENT_DESCRIPTION###</span>
+	</li>
+	<!--###DEPARTMENT_HEADER### end -->
+	
+	<!--###STAFF_LIST_LINE### begin
+		Template for single staff listing in list that is line-by-line
+	-->
+	<li class="entry fullWidth ###ALT_LISTCOLOR###" >
+		<!-- ###SHOW_PHOTO_MAIN### begin --><span class="photoSmallDisplay floatLeft">###PHOTO_SMALL_LINK###</span> <!-- ###SHOW_PHOTO_MAIN### end -->
+		<!-- ###SHOW_NAME### begin --> 	 	<span class="nameDisplay floatLeft isBold">###NAME_LINK###</span><!-- ###SHOW_NAME### end -->
+		<!-- ###SHOW_DEPARTMENT### begin --><span class="deptDisplay floatLeft">###DEPARTMENT###</span> <!-- ###SHOW_DEPARTMENT### end -->
+		<!-- ###SHOW_POSITION_TITLE### begin --> <span class="posDisplay floatLeft">###POSITION_TITLE###</span>	<!-- ###SHOW_POSITION_TITLE### end -->
+		<!-- ###SHOW_TELEPHONE### begin --> <span class="phoneDisplay floatLeft">###TELEPHONE###</span><!-- ###SHOW_TELEPHONE### end -->
+		<!-- ###SHOW_CELLPHONE### begin --> <span class="cellDisplay floatLeft">###CELLPHONE### ###CELLPHONE_NOTIFY_LABEL###</span><!-- ###SHOW_CELLPHONE### end -->
+		<!-- ###SHOW_FAX### begin -->  		<span class="faxDisplay floatLeft">###FAX### ###FAX_NOTIFY_LABEL###</span><!-- ###SHOW_FAX### end -->
+		<!-- ###SHOW_MISC### begin --> 		<span class="miscDisplay floatLeft">###MISC###</span> <!-- ###SHOW_MISC### end -->
+		<!-- ###SHOW_EMAIL### begin --> 	<span class="emailDisplay floatLeft">###EMAIL_ICON###</span> <!-- ###SHOW_EMAIL### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT1### begin --> <span class="social1Display floatLeft">###SOCIAL_CONTACT1_ICON###&nbsp;</span> <!-- ###SHOW_SOCIAL_CONTACT1### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT2### begin --> <span class="social2Display floatLeft">###SOCIAL_CONTACT2_ICON###&nbsp;</span> <!-- ###SHOW_SOCIAL_CONTACT2### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT3### begin --> <span class="social3Display floatLeft">###SOCIAL_CONTACT3_ICON###&nbsp;</span> <!-- ###SHOW_SOCIAL_CONTACT3### end -->
+		<!-- ###SHOW_START_DATE### begin --> <span class="dateDisplay floatLeft">###START_DATE###&nbsp;</span> <!-- ###SHOW_START_DATE### end -->
+		<span  class="editButtons floatRight">###SHOW_EDIT_BTN### ###SHOW_DELETE_BTN###</span>
+		<div class="vspacer"> </div>
+	</li>
+	<!-- ###STAFF_LIST_LINE### end -->
+
+	<!--###STAFF_LIST_COLUMN### begins
+		Template for single staff listing in list by column
+	-->
+	<li class="entry column ###ALT_LISTCOLOR###">
+		<div class="leftSide">
+			<!-- ###SHOW_PHOTO_MAIN### begin --> ###PHOTO_SMALL_LINK### <!-- ###SHOW_PHOTO_MAIN### end -->
+		</div>
+		<div class="rightSide">
+			<!-- ###SHOW_NAME### begin --> 	 	<div class="allWidth lgText isBold">###NAME_LINK###</div><!-- ###SHOW_NAME### end -->
+			<!-- ###SHOW_DEPARTMENT### begin --> <div class="allWidth medText">###DEPARTMENT###</div> <!-- ###SHOW_DEPARTMENT### end -->
+			<!-- ###SHOW_POSITION_TITLE### begin --> <div class="allWidth medText">###POSITION_TITLE###</div>	<!-- ###SHOW_POSITION_TITLE### end -->
+			<!-- ###SHOW_TELEPHONE### begin --> <div class="allWidth smText">###TELEPHONE###</div><!-- ###SHOW_TELEPHONE### end -->
+			<!-- ###SHOW_CELLPHONE### begin --> <div class="allWidth smText">###CELLPHONE### ###CELLPHONE_NOTIFY_LABEL###</div><!-- ###SHOW_CELLPHONE### end -->
+			<!-- ###SHOW_FAX### begin --> 		<div class="allWidth smText">###FAX### ###FAX_NOTIFY_LABEL###</div><!-- ###SHOW_FAX### end -->
+			<!-- ###SHOW_START_DATE### begin --> <div class="allWidth smText">###START_DATE###</div> <!-- ###SHOW_START_DATE### end -->
+			<div class="allWidth">
+				<!-- ###SHOW_EMAIL### begin --> 	<div class="smallImage floatLeft">###EMAIL_ICON###</div> <!-- ###SHOW_EMAIL### end -->
+				<!-- ###SHOW_SOCIAL_CONTACT1### begin --> 	<div class="smallImage floatLeft">###SOCIAL_CONTACT1_ICON###</div> <!-- ###SHOW_SOCIAL_CONTACT1### end -->
+				<!-- ###SHOW_SOCIAL_CONTACT2### begin --> 	<div class="smallImage floatLeft">###SOCIAL_CONTACT2_ICON###</div> <!-- ###SHOW_SOCIAL_CONTACT2### end -->
+				<!-- ###SHOW_SOCIAL_CONTACT3### begin --> 	<div class="smallImage floatLeft">###SOCIAL_CONTACT3_ICON###</div> <!-- ###SHOW_SOCIAL_CONTACT3### end -->
+			</div>
+			<div class="editButtons" style="clear:both;">###SHOW_EDIT_BTN### ###SHOW_DELETE_BTN###</div>
+		</div>
+	</li>
+	<!-- ###STAFF_LIST_COLUMN### end -->
+
+	<!--###STAFF_LIST_BRIEF### begin
+		Template for a single staff listing that is shortened
+	-->
+	<li class="entry fullWidth ###ALT_LISTCOLOR###">
+		<!-- ###SHOW_NAME### begin --> 	 	<div class="nameDisplay floatLeft medText isBold">###NAME_LINK### </div><!-- ###SHOW_NAME### end -->
+		<!-- ###SHOW_POSITION_TITLE### begin --> <div class="posDisplay floatLeft smText">###POSITION_TITLE### </div>	<!-- ###SHOW_POSITION_TITLE### end -->
+		<!-- ###SHOW_DEPARTMENT### begin --> <div class="deptDisplay floatLeft smText">###DEPARTMENT### </div> <!-- ###SHOW_DEPARTMENT### end -->
+		<!-- ###SHOW_TELEPHONE### begin --> <div class="phoneDisplay floatLeft smText">###TELEPHONE### </div><!-- ###SHOW_TELEPHONE### end -->
+		<!-- ###SHOW_CELLPHONE### begin --> <div class="cellDisplay floatLeft smText">###CELLPHONE### ###CELLPHONE_NOTIFY_LABEL###</div><!-- ###SHOW_CELLPHONE### end -->
+		<!-- ###SHOW_EMAIL### begin --> 	<div class="emailDisplay floatLeft smText">###EMAIL_ICON###&nbsp;</div> <!-- ###SHOW_EMAIL### end -->
+		<div class="editButtons floatRight">###SHOW_EDIT_BTN###  ###SHOW_DELETE_BTN###</div>
+		<div class="vspacer"> </div>
+	</li>
+	<!-- ###STAFF_LIST_BRIEF### end -->
+
+	<!--###STAFF_LIST_VERBOSE### begin
+		Template for a single staff listing that has verbose info
+	-->
+	<li class="entry fullWidth ###ALT_LISTCOLOR###">
+		<!-- ###SHOW_PHOTO_MAIN### begin -->
+		<div class="photoSmallDisplay floatLeft leftSide">
+			###PHOTO_SMALL_LINK###
+			###SHOW_EDIT_BTN###  ###SHOW_DELETE_BTN###
+		</div>
+		<!--- ###SHOW_PHOTO_MAIN### end -->
+		<div class="floatLeft rightSide">
+			<!-- ###SHOW_NAME### begin --> 	 	<div class="allWidth lgText isBold">###NAME_LINK###</div><!-- ###SHOW_NAME### end -->
+			<!-- ###SHOW_POSITION_TITLE### begin --> <div class="allWidth medText">###POSITION_TITLE###</div>	<!-- ###SHOW_POSITION_TITLE### end -->
+			<!-- ###SHOW_POSITION_DESCRIPTION### begin --> <div class="allWidth medText">###POSITION_DESCRIPTION###</div>	<!-- ###SHOW_POSITION_DESCRIPTION### end -->
+			<!-- ###SHOW_DEPARTMENT### begin --> <div class="allWidth medText">###DEPARTMENT###</div>	<!-- ###SHOW_DEPARTMENT### end -->
+			<!-- ###SHOW_TEAM### begin --> <div class="allWidth medText">###TEAM###</div>	<!-- ###SHOW_TEAM### end -->
+			<!-- ###SHOW_TELEPHONE### begin --> <div class="allWidth medText">###TELEPHONE###&nbsp;</div><!-- ###SHOW_TELEPHONE### end -->
+			<!-- ###SHOW_CELLPHONE### begin --> <div class="allWidth medText">###CELLPHONE### ###CELLPHONE_NOTIFY_LABEL###</div><!-- ###SHOW_CELLPHONE### end -->
+			<!-- ###SHOW_FAX### begin --> <div class="allWidth medText">###FAX### ###FAX_NOTIFY_LABEL###</div><!-- ###SHOW_FAX### end -->
+			<!-- ###SHOW_MISC### begin --> <div class="allWidth medText">###MISC###</div><!-- ###SHOW_MISC### end -->
+			<!-- ###SHOW_EMAIL### begin --> <div class="allWidth medText">###EMAIL_LINK### </div> <!-- ###SHOW_EMAIL### end -->
+			<div class="allWidth">
+			  <!-- ###SHOW_SOCIAL_CONTACT1### begin --> 	<div class="floatLeft itemSpacer">###SOCIAL_CONTACT1_LINK### </div> <!-- ###SHOW_SOCIAL_CONTACT1### end -->
+			  <!-- ###SHOW_SOCIAL_CONTACT2### begin --> 	<div class="floatLeft itemSpacer">###SOCIAL_CONTACT2_LINK### </div> <!-- ###SHOW_SOCIAL_CONTACT2### end -->
+			  <!-- ###SHOW_SOCIAL_CONTACT3### begin --> 	<div class="floatLeft itemSpacer">###SOCIAL_CONTACT3_LINK### </div> <!-- ###SHOW_SOCIAL_CONTACT3### end -->
+			  <div class="vspacer"> </div>
+			</div>
+			<!-- ###SHOW_START_DATE### begin --> 	<div class="allWidth medText">###START_DATE###</div> <!-- ###SHOW_START_DATE### end -->
+			<!-- ###SHOW_ADDRESS### begin --><div class="allWidth medText">###ADDRESS_LABEL### ###ADDRESS###<br />###CITY###, ###ZONE### ###ZIP###</div><!-- ###SHOW_ADDRESS### end -->
+			<!-- ###SHOW_BIOGRAPHY### begin --> <div class="allWidth smText">###BIO_SHORT### ###BIO_SHORT_MORE###</div>	<!-- ###SHOW_BIOGRAPHY### end -->
+			<!-- ###SHOW_NEWS### begin --> 		<div class="allWidth smText">###NEWS_SHORT### ###NEWS_SHORT_MORE###</div>	<!-- ###SHOW_NEWS### end -->
+		</div>
+		<div class="vspacer"> </div>
+	</li>
+	<!-- ###STAFF_LIST_VERBOSE### end -->
+
+	<!--
+	=====================================================================================================
+	###STAFF_LIST_CUSTOM### begin
+		Template for a single staff listing that can be customized
+	=====================================================================================================
+	-->
+	<li class="entry fullWidth ###ALT_LISTCOLOR###">
+		<!-- ###SHOW_PHOTO_MAIN### begin --> ###PHOTO_SMALL_LINK### ###SHOW_EDIT_BTN###  ###SHOW_DELETE_BTN###<!--- ###SHOW_PHOTO_MAIN### end -->
+		<!-- ###SHOW_NAME### begin --> 	 	<div class="allWidth lgText isBold">###NAME_LINK###</div><!-- ###SHOW_NAME### end -->
+		<!-- ###SHOW_POSITION_TITLE### begin --> <div class="allWidth lgText">###POSITION_TITLE###</div>	<!-- ###SHOW_POSITION_TITLE### end -->
+		<!-- ###SHOW_POSITION_DESCRIPTION### begin --> <div class="allWidth medText">###POSITION_DESCRIPTION###</div>	<!-- ###SHOW_POSITION_DESCRIPTION### end -->
+		<!-- ###SHOW_TELEPHONE### begin --> <div class="allWidth medText">###TELEPHONE###&nbsp;</div><!-- ###SHOW_TELEPHONE### end -->
+		<!-- ###SHOW_CELLPHONE### begin --> <div  class="allWidth medText">###CELLPHONE### ###CELLPHONE_NOTIFY_LABEL###</div><!-- ###SHOW_CELLPHONE### end -->
+		<!-- ###SHOW_FAX### begin --> 		<div  class="allWidth medText">###FAX### ###FAX_NOTIFY_LABEL###</div><!-- ###SHOW_FAX### end -->
+		<!-- ###SHOW_MISC### begin --> 		<div  class="allWidth medText">###MISC###</div><!-- ###SHOW_MISC### end -->
+		<!-- ###SHOW_EMAIL### begin --> 	<div  class="allWidth medText">###EMAIL_LINK### </div> <!-- ###SHOW_EMAIL### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT1### begin --> 	<div class="allWidth medText">###SOCIAL_CONTACT1_LINK### </div> <!-- ###SHOW_SOCIAL_CONTACT1### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT2### begin --> 	<div class="allWidth medText">###SOCIAL_CONTACT2_LINK### </div> <!-- ###SHOW_SOCIAL_CONTACT2### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT3### begin --> 	<div class="allWidth medText">###SOCIAL_CONTACT3_LINK### </div> <!-- ###SHOW_SOCIAL_CONTACT3### end -->
+		<!-- ###SHOW_BIOGRAPHY### begin --> <div  class="allWidth smText">###BIO_SHORT### ###BIO_SHORT_MORE###</div>	<!-- ###SHOW_BIOGRAPHY### end -->
+		<!-- ###SHOW_NEWS### begin --> 		<div  class="allWidth smText">###NEWS_SHORT### ###NEWS_SHORT_MORE###</div>	<!-- ###SHOW_NEWS### end -->
+		<div class="vspacer"> </div>
+	</li>
+	<!-- ###STAFF_LIST_CUSTOM### end -->
+
+
+	<div class="fullWidth centered">
+		###PAGING_PREV###
+		###PAGING_NEXT###
+	</div>
+</div>
+<div class="vspacer">&nbsp;</div>
+<!-- ###TEMPLATE_STAFF_LIST### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_STAFF_SINGLE### begin
+=====================================================================================================
+-->
+<div class="pluginContent singleView">
+ <!-- ###SHOW_RESPONSE### begin--><div class="notice">###RESPONSE_TEXT###</div> <!-- ###SHOW_RESPONSE### end-->
+ <div class="pluginSection">
+	<div class="photo">
+		<!-- ###SHOW_PHOTO_MAIN### begin-->
+			###PHOTO###
+		<!-- ###SHOW_PHOTO_MAIN### end-->
+		<center>###SHOW_EDIT_BTN###  ###SHOW_DELETE_BTN###</center>
+	</div>
+	<div class="topAside">
+		<div class="floatRight">###STAFF_DROPDOWN_MENU###</div>
+		<div class="floatRight">###BACK_TO_STAFFLIST_BTN###</div>
+	</div>
+	<ul class="entries">
+	 <li>
+		<!-- ###SHOW_NAME### begin --><div class="fieldHeaderLarge">###NAME###</div><!-- ###SHOW_NAME### end -->
+
+		<!-- ###SHOW_JOB_INFO_HEADER### begin--><div class="fieldHeader">###JOB_INFO_HEADER###</div><!-- ###SHOW_JOB_INFO_HEADER### end-->
+		<!-- ###SHOW_DEPARTMENT### begin --><div class="fieldLabel">###DEPARTMENT_LABEL###</div><div class="fieldDescription">###DEPARTMENT_LIST###</div><!-- ###SHOW_DEPARTMENT### end -->
+		<!-- ###SHOW_POSITION_TITLE### begin --><div class="fieldLabel">###POSITION_TITLE_LABEL###</div><div class="fieldDescription">###POSITION_TITLE###</div><!-- ###SHOW_POSITION_TITLE### end -->
+		<!-- ###SHOW_POSITION_DESCRIPTION### begin --><div class="fieldLabel">###POSITION_DESCRIPTION_LABEL###</div><div class="fieldDescription">###POSITION_DESCRIPTION###</div><!-- ###SHOW_POSITION_DESCRIPTION### end -->
+		<!-- ###SHOW_START_DATE### begin --> 	<div class="fieldLabel">###START_DATE_LABEL###</div><div class="fieldDescription">###START_DATE###</div> <!-- ###SHOW_START_DATE### end -->
+
+		<!-- ###SHOW_CONTACT_INFO_HEADER### begin--><div class="fieldHeader">###CONTACT_INFO_HEADER###</div><!-- ###SHOW_CONTACT_INFO_HEADER### end-->
+		<!-- ###SHOW_ADDRESS### begin --><div class="fieldLabel">###ADDRESS_LABEL###</div><div class="fieldDescription">###ADDRESS###<br />###CITY###, ###ZONE### ###ZIP###</div><!-- ###SHOW_ADDRESS### end -->
+		<!-- ###SHOW_COUNTRY### begin --><div class="fieldLabel">###COUNTRY_LABEL###</div><div class="fieldDescription"> ###COUNTRY###</div><!-- ###SHOW_COUNTRY### end -->
+		<!-- ###SHOW_TELEPHONE### begin --><div class="fieldLabel">###TELEPHONE_LABEL###</div><div class="fieldDescription">###TELEPHONE###</div><!-- ###SHOW_TELEPHONE### end -->
+		<!-- ###SHOW_CELLPHONE### begin --><div class="fieldLabel">###CELLPHONE_LABEL###</div><div class="fieldDescription">###CELLPHONE###</div><!-- ###SHOW_CELLPHONE### end -->
+		<!-- ###SHOW_FAX### begin --><div class="fieldLabel">###FAX_LABEL###</div><div class="fieldDescription"> ###FAX###</div><!-- ###SHOW_FAX### end -->
+		<!-- ###SHOW_EMAIL### begin --><div class="fieldLabel">###EMAIL_LABEL###</div><div class="fieldDescription"> ###EMAIL_LINK###</div><!-- ###SHOW_EMAIL### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT1### begin --><div class="fieldLabel">###SOCIAL_CONTACT1_LABEL###</div><div class="fieldDescription"> ###SOCIAL_CONTACT1_LINK###</div><!-- ###SHOW_SOCIAL_CONTACT1### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT2### begin --><div class="fieldLabel">###SOCIAL_CONTACT2_LABEL###</div><div class="fieldDescription"> ###SOCIAL_CONTACT2_LINK###</div><!-- ###SHOW_SOCIAL_CONTACT2### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT3### begin --><div class="fieldLabel">###SOCIAL_CONTACT3_LABEL###</div><div class="fieldDescription"> ###SOCIAL_CONTACT3_LINK###</div><!-- ###SHOW_SOCIAL_CONTACT3### end -->
+	</li>
+	<li>
+		<div class="floatLeft fullWidth">
+			<!-- ###SHOW_BIOGRAPHY### begin-->
+				<div class="fieldHeader">###BIOGRAPHY_HEADER###</div>
+				<div class="fieldDescriptionLarge">###BIOGRAPHY###</div>
+			<!-- ###SHOW_BIOGRAPHY### end-->
+			<!-- ###SHOW_NEWS### begin-->
+				<div class="fieldHeader">###NEWS_HEADER###</div>
+				<div class="fieldDescriptionLarge">###NEWS###</div>
+			<!-- ###SHOW_NEWS### end-->
+		</div>
+		<div class="floatLeft fullWidth">
+			<!-- ###SHOW_PHOTOS_ETC### begin-->
+			<span>###PHOTO1###</span>
+			<span>###PHOTO2###</span>
+			<span>###PHOTO3###</span>
+			<span>###PHOTO4###</span>
+			<!-- ###SHOW_PHOTOS_ETC### end-->
+		</div>
+		<div class="floatLeft fullWidth">
+			<!--- ###SHOW_MAP### begin -->
+			###MAP###
+			<!-- ###SHOW_MAP### end -->
+		</div>
+	 </li>
+	</ul>	
+ </div>
+</div>
+<div class="vspacer">&nbsp;</div>
+<!-- ###TEMPLATE_STAFF_SINGLE### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_STAFF_RANDOM### begin
+=====================================================================================================
+-->
+<div class="pluginContent">
+ <div class="pluginSection">
+	<div class="photo">
+		<!-- ###SHOW_PHOTO_MAIN### begin-->
+			###PHOTO###
+		<!-- ###SHOW_PHOTO_MAIN### end-->
+		<center>###SHOW_EDIT_BTN###  ###SHOW_DELETE_BTN###</center>
+	</div>
+	<ul class="entries">
+	 <li>
+		<!-- ###SHOW_NAME### begin --><div class="fieldHeaderLarge">###NAME###</div><!-- ###SHOW_NAME### end -->
+
+		<!-- ###SHOW_JOB_INFO_HEADER### begin--><div class="fieldHeader">###JOB_INFO_HEADER###</div><!-- ###SHOW_JOB_INFO_HEADER### end-->
+		<!-- ###SHOW_DEPARTMENT### begin --><div class="fieldLabel">###DEPARTMENT_LABEL###</div><div class="fieldDescription">###DEPARTMENT###</div><!-- ###SHOW_DEPARTMENT### end -->
+		<!-- ###SHOW_POSITION_TITLE### begin --><div class="fieldLabel">###POSITION_TITLE_LABEL###</div><div class="fieldDescription">###POSITION_TITLE###</div><!-- ###SHOW_POSITION_TITLE### end -->
+		<!-- ###SHOW_POSITION_DESCRIPTION### begin --><div class="fieldLabel">###POSITION_DESCRIPTION_LABEL###</div><div class="fieldDescription">###POSITION_DESCRIPTION###</div><!-- ###SHOW_POSITION_DESCRIPTION### end -->
+
+		<!-- ###SHOW_CONTACT_INFO_HEADER### begin--><div class="fieldHeader">###CONTACT_INFO_HEADER###</div><!-- ###SHOW_CONTACT_INFO_HEADER### end-->
+		<!-- ###SHOW_ADDRESS### begin --><div class="fieldLabel">###ADDRESS_LABEL###</div><div class="fieldDescription">###ADDRESS###<br />###CITY###, ###ZONE### ###ZIP###</div><!-- ###SHOW_ADDRESS### end -->
+		<!-- ###SHOW_COUNTRY### begin --><div class="fieldLabel">###COUNTRY_LABEL###</div><div class="fieldDescription"> ###COUNTRY###</div><!-- ###SHOW_COUNTRY### end -->
+		<!-- ###SHOW_TELEPHONE### begin --><div class="fieldLabel">###TELEPHONE_LABEL###</div><div class="fieldDescription">###TELEPHONE###</div><!-- ###SHOW_TELEPHONE### end -->
+		<!-- ###SHOW_CELLPHONE### begin --><div class="fieldLabel">###CELLPHONE_LABEL###</div><div class="fieldDescription">###CELLPHONE###</div><!-- ###SHOW_CELLPHONE### end -->
+		<!-- ###SHOW_FAX### begin --><div class="fieldLabel">###FAX_LABEL###</div><div class="fieldDescription"> ###FAX###</div><!-- ###SHOW_FAX### end -->
+		<!-- ###SHOW_EMAIL### begin --><div class="fieldLabel">###EMAIL_LABEL###</div><div class="fieldDescription"> ###EMAIL_LINK###</div><!-- ###SHOW_EMAIL### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT1### begin --><div class="fieldLabel">###SOCIAL_CONTACT1_LABEL###</div><div class="fieldDescription"> ###SOCIAL_CONTACT1_LINK###</div><!-- ###SHOW_SOCIAL_CONTACT1### end -->
+		<!-- ###SHOW_SOCIAL_CONTACT2### begin --><div class="fieldLabel">###SOCIAL_CONTACT2_LABEL###</div><div class="fieldDescription"> ###SOCIAL_CONTACT2_LINK###</div><!-- ###SHOW_SOCIAL_CONTACT2### end -->
+
+		<!-- ###SHOW_BIOGRAPHY### begin-->
+			<div class="fieldHeader">###BIOGRAPHY_HEADER###</div>
+			<div class="fieldDescriptionLarge">###BIOGRAPHY###</div>
+		<!-- ###SHOW_BIOGRAPHY### end-->
+		<!-- ###SHOW_NEWS### begin-->
+			<div class="fieldHeader">###NEWS_HEADER###</div>
+			<div class="fieldDescriptionLarge">###NEWS###</div>
+		<!-- ###SHOW_NEWS### end-->
+	 </li>
+	</ul>
+ </div>
+</div>
+<div class="vspacer">&nbsp;</div>
+<!-- ###TEMPLATE_STAFF_RANDOM### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_EDITFORM### begin
+=====================================================================================================
+-->
+<div class="wecstaffdirectoryForm">
+  <form name="editForm" class="pluginForm" action="###ACTION_URL###" method="post"  enctype="multipart/form-data">
+	<h3>###FORMTITLE###: ###VALUE_NAME###</h3>
+	<!-- ###SHOW_ERROR### begin--><div class="error">###FORM_ERROR_TEXT###</div><!-- ###SHOW_ERROR### end-->
+  	###HIDDEN_VARS###
+	<ul>
+  	<!-- ###SHOW_NAME### begin -->
+    <li>
+	    <label>###NAME_LABEL###</label><input name="tx_wecstaffdirectory_pi1[name]" type="text" value="###VALUE_NAME###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_NAME### end -->
+  	<!-- ###SHOW_FEUSER### begin -->
+    <li>
+	    <label>###FEUSER_LABEL###</label>###FEUSER_SELECT###
+	</li>
+	<!-- ###SHOW_FEUSER### end -->
+	<!-- ###SHOW_POSITION_TITLE### begin -->
+    <li>
+    	<label>###POSITION_TITLE_LABEL###</label><input name="tx_wecstaffdirectory_pi1[position_title]" type="text" value="###VALUE_POSITION_TITLE###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_POSITION_TITLE### end -->
+	<!-- ###SHOW_POSITION_DESCRIPTION### begin -->
+    <li>
+    	<label>###POSITION_DESCRIPTION_LABEL###</label><textarea name="tx_wecstaffdirectory_pi1[position_description]" type="text" cols="40" rows="3" wrap="VIRTUAL" class="high">###VALUE_POSITION_DESCRIPTION###</textarea>
+	</li>
+	<!-- ###SHOW_POSITION_DESCRIPTION### end -->
+
+	<!-- ###SHOW_DEPARTMENT### begin -->
+	<li>
+	   	<label>###DEPARTMENT_LABEL###</label>###DEPARTMENT_INPUT###
+	</li>
+	<!-- ###SHOW_DEPARTMENT### end -->
+
+	<!-- ###SHOW_TEAM### begin -->
+	<li>
+	   	<label>###TEAM_LABEL###</label><input name="tx_wecstaffdirectory_pi1[team]" type="text" value="###VALUE_TEAM###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_TEAM### end -->
+			
+	<!-- ###SHOW_EMAIL### begin -->
+    <li>
+		<label>###EMAIL_LABEL###</label><input name="tx_wecstaffdirectory_pi1[email]" type="text" value="###VALUE_EMAIL###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_EMAIL### end -->
+
+	<!-- ###SHOW_SOCIAL_CONTACT1### begin -->
+    <li>
+		<label>###SOCIAL_CONTACT1_LABEL###</label><input name="tx_wecstaffdirectory_pi1[social_contact1]" type="text" value="###VALUE_SOCIAL_CONTACT1###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_SOCIAL_CONTACT1### end -->
+	<!-- ###SHOW_SOCIAL_CONTACT2### begin -->
+    <li>
+		<label>###SOCIAL_CONTACT2_LABEL###</label><input name="tx_wecstaffdirectory_pi1[social_contact2]" type="text" value="###VALUE_SOCIAL_CONTACT2###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_SOCIAL_CONTACT2### end -->
+	<!-- ###SHOW_SOCIAL_CONTACT3### begin -->
+    <li>
+		<label>###SOCIAL_CONTACT3_LABEL###</label><input name="tx_wecstaffdirectory_pi1[social_contact3]" type="text" value="###VALUE_SOCIAL_CONTACT3###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_SOCIAL_CONTACT3### end -->
+					
+	<!-- ###SHOW_TELEPHONE### begin -->
+    <li>
+    	<label>###TELEPHONE_LABEL###</label><input name="tx_wecstaffdirectory_pi1[telephone]" type="text" value="###VALUE_TELEPHONE###" size="20" maxlength="40">
+	</li>
+	<!-- ###SHOW_TELEPHONE### end -->
+
+	<!-- ###SHOW_CELLPHONE### begin -->
+    <li>
+    	<label>###CELLPHONE_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[cellphone]" size="45" value="###VALUE_CELLPHONE###">
+	</li>
+	<!-- ###SHOW_CELLPHONE### end -->
+	<!-- ###SHOW_FAX### begin -->
+    <li>
+    	<label>###FAX_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[fax]" size="45" value="###VALUE_FAX###">
+	</li>
+	<!-- ###SHOW_FAX### end -->
+
+	<!-- ###SHOW_ADDRESS### begin -->
+	<li>
+	   	<label>###ADDRESS_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[address]" size="45" value="###VALUE_ADDRESS###">
+	</li>
+	<li>
+	   	<label>###ADDRESS2_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[address2]" size="45" value="###VALUE_ADDRESS2###">
+	</li>
+	<li>
+	   	<label>###CITY_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[city]" size="10" value="###VALUE_CITY###" class="inputMedium">
+	</li>
+	<li>			
+		<label>###ZONE_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[zone]" size="10" value="###VALUE_ZONE###" class="inputShort">
+	</li>		
+	<li>
+		<label>###ZIP_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[zip]" size="10" value="###VALUE_ZIP###" class="inputShort">
+	</li>
+	<!-- ###SHOW_ADDRESS### end -->
+					
+	<!-- ###SHOW_COUNTRY### begin -->
+	<li>
+	   	<label>###COUNTRY_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[country]" size="45" value="###VALUE_COUNTRY###">
+	</li>
+	<!-- ###SHOW_COUNTRY### end -->
+	
+	<!-- ###SHOW_BIOGRAPHY### begin -->
+    <li>
+    	<label>###BIOGRAPHY_LABEL###</label><textarea name="tx_wecstaffdirectory_pi1[biography]" cols="40" rows="8" wrap="VIRTUAL">###VALUE_BIOGRAPHY###</textarea>
+	</li>
+	<!-- ###SHOW_BIOGRAPHY### end -->
+	<!-- ###SHOW_NEWS### begin -->
+    <li>
+    	<label>###NEWS_LABEL###</label><textarea name="tx_wecstaffdirectory_pi1[news]" cols="40" rows="6" wrap="VIRTUAL">###VALUE_NEWS###</textarea>
+	</li>
+	<!-- ###SHOW_NEWS### end -->
+
+	<!-- ###SHOW_MISC### begin -->
+    <li>
+    	<label>###MISC_LABEL###</label><input type="text" name="tx_wecstaffdirectory_pi1[misc]" size="45" value="###VALUE_MISC###">
+	</li>
+	<!-- ###SHOW_MISC### end -->
+
+	<!-- ###SHOW_PHOTO_MAIN### begin -->
+	<script type="text/javascript">
+	<!--
+		function clearImage(cID,imgID) {
+			if (itm = document.getElementById(cID))
+			    itm.value = '';
+			imgEl = document.getElementById(imgID);
+			imgEl.src = '';
+			imgEl.height = 0;
+			imgEl.width = 0;
+		}
+	-->
+	</script>
+    <li>
+    	<label>###PHOTO_MAIN_LABEL###</label>
+		<input type="file" name="tx_wecstaffdirectory_pi1[photo_main]" size="40" value="###VALUE_PHOTO_MAIN###">
+    	<span class="textacross">###PHOTO_MAIN_IMAGE###  <input type="button" class="button" title="Clear image" value="Clear Image" onclick="clearImage('photo_main_save','photo_main');"></span>
+	</li>
+	<!-- ###SHOW_PHOTO_MAIN### end -->
+	<!-- ###SHOW_PHOTOS_ETC### begin -->
+    <li>
+    	<label>###PHOTOS_ETC1_LABEL###</label><input type="file" name="tx_wecstaffdirectory_pi1[photos_etc][]" size="40" value="###VALUE_PHOTOS_ETC1###">
+    	<span class="textacross">###PHOTOS_ETC_IMAGE1### ###PHOTOS_ETC_CLEAR_BTN1###</span>
+    	<label>###PHOTOS_ETC2_LABEL###</label><input type="file" name="tx_wecstaffdirectory_pi1[photos_etc][]" size="40" value="###VALUE_PHOTOS_ETC2###">
+    	<span class="textacross">###PHOTOS_ETC_IMAGE2###  ###PHOTOS_ETC_CLEAR_BTN2###</span>
+    	<label>###PHOTOS_ETC3_LABEL###</label><input type="file" name="tx_wecstaffdirectory_pi1[photos_etc][]" size="40" value="###VALUE_PHOTOS_ETC3###">
+    	<span class="textacross">###PHOTOS_ETC_IMAGE3### ###PHOTOS_ETC_CLEAR_BTN3###</span>
+	</li>
+	<!-- ###SHOW_PHOTOS_ETC### end -->
+
+    <li class="fullRow">
+		###SAVE_BUTTON###
+		###CANCEL_BUTTON###
+	</li>
+	</ul>
+	
+	<div class="vspacer">&nbsp;</div>
+ </form>
+</div>
+<!-- ###TEMPLATE_EDITFORM### end -->

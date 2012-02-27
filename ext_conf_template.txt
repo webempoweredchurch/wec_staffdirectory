@@ -1,0 +1,8 @@
+# cat=basic//10; type=boolean; label= Use Front-End users to store data : If you use Front-End Users for your staff you can use that data. If this is NOT selected, then all the information will be stored in the Staff Directory Info record instead.
+useFEUsers = 1
+
+# cat=basic; type=boolean; label=Enable Map in Staff records : Shows a map and coordinates of the given address. It's only displayed if the above option 'useFEUsers' is disabled. If it is enabled, the map will be displayed in the FE User record.
+showMap = 0
+
+# cat=basic; type=boolean; label=Use Staff Department Records : Use Staff Directory Department Records(new way). Old way is using strings.
+useStaffDeptRecords = 0

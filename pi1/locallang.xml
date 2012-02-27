@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>module</type>
+        <description>Language labels for plugin &quot;tx_wecstaffdirectory_pi1&quot;</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="form_name_label">Name</label>
+            <label index="form_first_name_label">First Name</label>
+            <label index="form_last_name_label">Last Name</label>
+            <label index="form_position_title_label">Position Title</label>
+            <label index="form_position_description_label">Position Description</label>
+            <label index="form_telephone_label">Phone #</label>
+            <label index="form_email_label">Email</label>
+            <label index="form_department_label">Department</label>
+            <label index="form_department_rec_label">Department</label>
+            <label index="form_team_label">Team</label>
+            <label index="form_start_date_label">Start Date</label>
+            <label index="form_biography_label">Biography</label>
+            <label index="form_news_label">News</label>
+            <label index="form_photo_main_label">Main Photo</label>
+            <label index="form_photos_etc_label">Misc Photos</label>
+            <label index="form_cellphone_label">Cell Phone #</label>
+            <label index="form_cellphone_notify_label">(cell)</label>
+            <label index="form_misc_label">Miscellaneous Field</label>
+            <label index="form_fax_label">Fax #</label>
+            <label index="form_fax_notify_label">(fax)</label>
+            <label index="form_address_label">Address</label>
+            <label index="form_address2_label">Address #2</label>
+            <label index="form_city_label">City</label>
+            <label index="form_zone_label">State/Province</label>
+            <label index="form_zip_label">Zip/Postal Code</label>
+            <label index="form_country_label">Country</label>
+            <label index="form_map_label">Map</label>
+            <label index="form_feuser_label">FrontEnd User Link</label>
+			<label index="form_social_contact1_label">Twitter</label>
+			<label index="form_social_contact2_label">Facebook</label>
+			<label index="form_social_contact3_label">Social Media</label>
+            <label index="job_header">Job Info</label>
+            <label index="contact_header">Contact Info</label>
+            <label index="biography_header">Personal Info</label>
+            <label index="news_header">Latest News</label>
+            <label index="sort_by">Sort By:</label>
+            <label index="sortmenu1">Last Name</label>
+            <label index="sortmenu2">Department</label>
+            <label index="sortmenu3">Employment Date</label>
+            <label index="sortmenu4">First Name</label>
+            <label index="sortmenu5">Default</label>
+            <label index="sortmenu6">Default</label>
+            <label index="search">Search: </label>
+            <label index="search_button">Go</label>
+            <label index="edit_btn">edit</label>
+            <label index="save_btn">Save Your Info</label>
+            <label index="back_btn">Return to Staff Listing</label>
+            <label index="cancel_btn">Cancel</label>
+            <label index="add_btn">Add New Person</label>
+            <label index="edit_info">Edit Your Info</label>
+            <label index="add_new_staff">Add New Staff</label>
+            <label index="create_new_btn">Create New Staff</label>
+            <label index="select_staff_menu">Select Staff To View...</label>
+            <label index="select_staff_add">Select Staff To Link To...</label>
+            <label index="select_staff_new">Create New User</label>
+            <label index="updated_staff_page">The staff page has been updated</label>
+            <label index="created_staff_page">The staff record has been created</label>
+            <label index="blank_field">&amp;nbsp;</label>
+            <label index="bad_email_format">Your email is not formatted properly (email@where.com)</label>
+            <label index="bad_name">Your name needs to be at least two characters</label>
+            <label index="bad_editor">You cannot edit this page</label>
+            <label index="bad_deleter">You cannot delete staff pages</label>
+            <label index="bad_edit_form">You cannot edit this now</label>
+            <label index="bad_delete_form">You cannot delete this now</label>
+            <label index="more_link">[More]</label>
+            <label index="delete_btn">delete</label>
+            <label index="delete_confirm">Do you really want to delete this entry?</label>
+            <label index="deleted_staff">The staff entry has been deleted</label>
+            <label index="bad_delete_id">Invalid delete request</label>
+            <label index="btn_separator"> </label>
+            <label index="label_separator">: </label>
+            <label index="field_separator">: </label>
+			<label index="errorIncludeStatic">You must include static "WEC Staff Directory template" for any output</label>
+			<label index="no_template">No template file found</label>
+			<label index="date_format">%m/%d/%Y</label>
+			<label index="select_department_menu">Select Department To View...</label>
+			<label index="select_department_all">All</label>
+			<label index="last_first_name">###LAST_NAME###, ###FIRST_NAME###</label>
+			<label index="first_last_name">###FIRST_NAME### ###LAST_NAME###</label>
+			<label index="multiDept_separator">, </label>
+			<label index="gender_female">female</label>
+			<label index="gender_male">male</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="form_name_label">Name</label>
+            <label index="form_firstname_label">Vorname</label>
+            <label index="form_position_title_label">Position Titel</label>
+            <label index="form_position_description_label">Aufgabenbereich</label>
+            <label index="form_telephone_label">Telefon</label>
+            <label index="form_shortdial_label">Kurzwahl</label>
+            <label index="form_email_label">Email</label>
+            <label index="form_location_label">Stockwerk</label>
+            <label index="form_department_label"> Abteilung</label>
+            <label index="form_team_label">Team</label>
+            <label index="form_position_label">Position</label>
+            <label index="form_role_label">Funktion</label>
+            <label index="form_start_date_label">Beginn Besch&amp;auml;ftigung</label>
+            <label index="form_biography_label">Biografie</label>
+            <label index="form_news_label">News</label>
+            <label index="form_photo_main_label">Haupt-Foto</label>
+            <label index="form_photos_etc_label">weitere Fotos</label>
+            <label index="form_cellphone_label">Handy</label>
+            <label index="form_cellphone_notify_label">(Handy)</label>
+            <label index="form_misc_label">diverses</label>
+            <label index="form_ges_label">GES-K&amp;uuml;rzel</label>
+            <label index="form_ges_notify_label">GES-K&amp;uuml;rzel</label>
+            <label index="form_address_label">Adresse</label>
+            <label index="form_homework_label">Heimarbeitsplatz</label>
+            <label index="form_zone_label">Staat</label>
+            <label index="form_zip_label">PLZ</label>
+            <label index="form_country_label">Land</label>
+            <label index="form_room_label">Raum</label>
+            <label index="form_room_notify_label">Raum</label>
+            <label index="form_title_label">Titel</label>
+            <label index="job_header">Arbeitsplatz-Info</label>
+            <label index="contact_header">Kontaktdaten</label>
+            <label index="biography_header">Pers&amp;ouml;nliche Daten</label>
+            <label index="news_header">Letzte Neuigkeiten</label>
+            <label index="sort_by">Sortieren nach: </label>
+            <label index="sortmenu1">Name</label>
+            <label index="sortmenu2">Abteilung</label>
+            <label index="sortmenu3">Besch&amp;auml;ftigungsdatum</label>
+            <label index="sortmenu4">Vorname</label>
+            <label index="sortmenu5">Standard</label>
+            <label index="sortmenu6">Standard</label>
+            <label index="sortmenu7">Funktion</label>
+            <label index="sortmenu8">Position</label>
+            <label index="search_label">Suche: </label>
+            <label index="search_department_label">Abteilung: </label>
+            <label index="search_position_label">Position: </label>
+            <label index="search_role_label">Funktion: </label>
+            <label index="search_choose">--- alle ---</label>
+            <label index="search_button">Suchen</label>
+            <label index="edit_btn">bearbeiten</label>
+            <label index="delete_btn">l&amp;ouml;schen</label>
+            <label index="new_btn">neuer Eintrag</label>
+            <label index="delete_confirm">M&amp;ouml;chten Sie diesen Eintrag wirklich l&amp;ouml;schen?</label>
+            <label index="save_btn">Speichern</label>
+            <label index="back_btn">Zur&amp;uuml;ck zur Mitarbeiterliste</label>
+            <label index="cancel_btn">Abbrechen</label>
+            <label index="select_staff_menu">Mitarbeiter ausw&amp;auml;hlen...</label>
+            <label index="updated_staff_page">Mitarbeiterseite wurde aktualisiert</label>
+            <label index="created_staff_page">Mitarbeiterseite wurde erstellt</label>
+            <label index="deleted_staff">Mitarbeiterseite wurde gel&amp;ouml;scht</label>
+            <label index="blank_field">&amp;nbsp;</label>
+            <label index="edit_info">Mitarbeiter bearbeiten: </label>
+            <label index="add_new_staff">Neuen Mitarbeiter anlegen</label>
+            <label index="bad_email_format">Ihre Mailadresse ist ung&amp;uuml;ltig (email@where.com)</label>
+            <label index="bad_name">Ihr Name muss mindestens 2 Zeichen lang sein</label>
+            <label index="bad_number1">Ihr </label>
+            <label index="bad_number2"> darf nur Zahlen enthalten</label>
+            <label index="bad_editor">Sie k&amp;ouml;nnen diese Seite nicht bearbeiten</label>
+            <label index="bad_edit_form">Sie können diese Seite jetzt nicht bearbeiten</label>
+            <label index="bad_delete_id">Ung&amp;uuml;ltige L&amp;ouml;schanforderung</label>
+            <label index="more_link">[mehr]</label>
+			<label index="date_format">%d-%m-%Y</label> 
+       </languageKey>
+		<languageKey index="dk" type="array">
+			<label index="form_name_label">Navn</label>
+			<label index="form_position_title_label">Stillingstitel</label>
+			<label index="form_position_description_label">Stillingsbeskrivelse</label>
+			<label index="form_telephone_label">Telefon</label>
+			<label index="form_email_label">Email</label>
+			<label index="form_department_label">Afdeling</label>
+			<label index="form_team_label">Team</label>
+			<label index="form_start_date_label">Startdato</label>
+			<label index="form_biography_label">Biografi</label>
+			<label index="form_news_label">Nyhed</label>
+			<label index="form_photo_main_label">Primær foto</label>
+			<label index="form_photos_etc_label">Diverse fotos</label>
+			<label index="form_cellphone_label">Mobiltelefon</label>
+			<label index="form_cellphone_notify_label">(mobil)</label>
+			<label index="form_misc_label">Diverse</label>
+			<label index="form_fax_label">Fax</label>
+			<label index="form_fax_notify_label">(fax)</label>
+			<label index="form_address_label">Adresse</label>
+			<label index="form_address2_label">Adresse2</label>
+			<label index="form_city_label">By</label>
+			<label index="form_zone_label">Stat/provins</label>
+			<label index="form_zip_label">Postnummer</label>
+			<label index="form_country_label">Land</label>
+			<label index="form_map_label">Landkort</label>
+			<label index="form_feuser_label">FrontEnd bruger link</label>
+			<label index="job_header">Jobinfo</label>
+			<label index="contact_header">Kontaktinfo</label>
+			<label index="biography_header">Personlig info</label>
+			<label index="news_header">Sidste nyt</label>
+			<label index="sort_by">Sortér på:</label>
+			<label index="sortmenu1">Efternavn</label>
+			<label index="sortmenu2">Afdeling</label>
+			<label index="sortmenu3">Dato for ansættelsens start</label>
+			<label index="sortmenu4">Fornavn</label>
+			<label index="sortmenu5">Standard</label>
+			<label index="sortmenu6">Standard</label>
+			<label index="search">Søg:</label>
+			<label index="search_button">Søg</label>
+			<label index="edit_btn">Rediger</label>
+			<label index="save_btn">Gem</label>
+			<label index="back_btn">Returner til adresseliste</label>
+			<label index="cancel_btn">Fortryd</label>
+			<label index="add_btn">Tilføj ny person</label>
+			<label index="edit_info">Rediger dit info</label>
+			<label index="add_new_staff">Tilføj nyt personale</label>
+			<label index="create_new_btn">Opret</label>
+			<label index="select_staff_menu">Vælg person...</label>
+			<label index="select_staff_add">Vælg person at linke til...</label>
+			<label index="select_staff_new">Opret ny bruger</label>
+			<label index="updated_staff_page">Peronsalesiden er blevet opdateret</label>
+			<label index="created_staff_page">Ny person er blevet oprettet</label>
+			<label index="blank_field">&amp;nbsp;</label>
+			<label index="bad_email_format">Den indtastede emailadresse har ikke korrekte format (email@where.com)</label>
+			<label index="bad_name">Dit navn skal være på mindst to karakterer</label>
+			<label index="bad_editor">Du kan ikke redigere denne side</label>
+			<label index="bad_deleter">Du kan ikke slette personalesider</label>
+			<label index="bad_edit_form">Du kan ikke redigere dette nu</label>
+			<label index="bad_delete_form">Du kan ikke slette dette nu</label>
+			<label index="more_link">[Mere]</label>
+			<label index="delete_btn">slet</label>
+			<label index="delete_confirm">Vil du virkelig slette dette?</label>
+			<label index="deleted_staff">Personen er blevet slettet fra systemet</label>
+			<label index="bad_delete_id">Forkert sletteforespørgsel</label>
+			<label index="btn_separator"></label>
+			<label index="label_separator">:</label>
+			<label index="errorIncludeStatic">Du skal indkludere static &quot;WEC Staff Directory template&quot;</label>
+			<label index="no_template">Ingen skabelonfil fundet</label>
+			<label index="date_format">%d-%m-%Y</label> 
+		</languageKey>
+        <languageKey index="no" type="array">
+        </languageKey>
+        <languageKey index="it" type="array">
+        </languageKey>
+	  <languageKey index="fr" type="array">
+		    <label index="form_name_label">Nom</label>
+	            <label index="form_first_name_label">Prénom</label>
+	            <label index="form_last_name_label">Nom</label>
+	            <label index="form_position_title_label">Intitulé du poste</label>
+	            <label index="form_position_description_label">Description du poste</label>
+	            <label index="form_telephone_label">Téléphone #</label>
+	            <label index="form_email_label">Adresse de courrier électronique</label>
+	            <label index="form_department_label">Institution</label>
+	            <label index="form_department_rec_label">Institution</label>
+	            <label index="form_team_label">Equipe</label>
+	            <label index="form_start_date_label">Date de début</label>
+	            <label index="form_biography_label">Biographie</label>
+	            <label index="form_news_label">Actualités</label>
+	            <label index="form_photo_main_label">Photo principale</label>
+	            <label index="form_photos_etc_label">Autres Photos</label>
+	            <label index="form_cellphone_label">Téléphone portable #</label>
+	            <label index="form_cellphone_notify_label">(portable)</label>
+	            <label index="form_misc_label">Champ additionnel</label>
+	            <label index="form_fax_label">Fax #</label>
+	            <label index="form_fax_notify_label">(fax)</label>
+	            <label index="form_address_label">Addresse</label>
+	            <label index="form_address2_label">Addresse #2</label>
+	            <label index="form_city_label">Ville</label>
+	            <label index="form_zone_label">Région</label>
+	            <label index="form_zip_label">Code postal</label>
+	            <label index="form_country_label">Pays</label>
+	            <label index="form_map_label">Map</label>
+	            <label index="form_feuser_label">Lier à l'utilisateur FrontEnd</label>
+				<label index="form_social_contact1_label">Twitter</label>
+				<label index="form_social_contact2_label">Facebook</label>
+				<label index="form_social_contact3_label">Media sociaux</label>
+	            <label index="job_header">Job Info</label>
+	            <label index="contact_header">Contacts</label>
+	            <label index="biography_header">Informations personnelles</label>
+	            <label index="news_header">Actualités</label>
+	            <label index="sort_by">Classer par:</label>
+	            <label index="sortmenu1">Nom</label>
+	            <label index="sortmenu2">Institution</label>
+	            <label index="sortmenu3">Date d'embauche</label>
+	            <label index="sortmenu4">Prénom</label>
+	            <label index="sortmenu5">Par défaut</label>
+	            <label index="sortmenu6">Par défaut</label>
+	            <label index="search">Rechercher: </label>
+	            <label index="search_button">OK</label>
+	            <label index="edit_btn">éditer</label>
+	            <label index="save_btn">Enregistrer vos informatons</label>
+	            <label index="back_btn">Retourner à la liste des membres</label>
+	            <label index="cancel_btn">Annuler</label>
+	            <label index="add_btn">Ajouter une nouvelle fiche</label>
+	            <label index="edit_info">Editer vos informations</label>
+	            <label index="add_new_staff">Ajouter une nouvelle fiche</label>
+	            <label index="create_new_btn">Créer une nouvelle fiche</label>
+	            <label index="select_staff_menu">Sélectionner le membre à afficher...</label>
+	            <label index="select_staff_add">Faire un lien avec le membre...</label>
+	            <label index="select_staff_new">Créer un nouvel utilisateur</label>
+	            <label index="updated_staff_page">La fiche a été mise à jour</label>
+	            <label index="created_staff_page">L'enregistrement a été créer</label>
+	            <label index="blank_field">&amp;nbsp;</label>
+	            <label index="bad_email_format">Le format de votre adresse email n'est pas valide (email@where.com)</label>
+	            <label index="bad_name">Votre nom doit comporter au moins 2 caractères</label>
+	            <label index="bad_editor">Vous ne pouvez pas éditer cette page</label>
+	            <label index="bad_deleter">Vous ne pouvez pas supprimer cette page</label>
+	            <label index="bad_edit_form">Vous ne pouvez pas éditer ceci maintenant</label>
+	            <label index="bad_delete_form">Vous ne pouvez pas supprimer ceci maintenant</label>
+	            <label index="more_link">Lire la suite]</label>
+	            <label index="delete_btn">Supprimer</label>
+	            <label index="delete_confirm">Voulez-vous vraiment supprimer cette fiche?</label>
+	            <label index="deleted_staff">La fiche à été supprimée</label>
+	            <label index="bad_delete_id">Suppression impossible</label>
+	            <label index="btn_separator"> </label>
+	            <label index="label_separator">: </label>
+	            <label index="field_separator">: </label>
+				<label index="errorIncludeStatic">Vous devez inclure le gabarit statique "WEC Staff Directory template" pour permetre l'affichage</label>
+				<label index="no_template">Aucun gabarit trouvé</label>
+				<label index="date_format">%d/%m/%Y</label>
+				<label index="select_department_menu">Selectionner l'institution à afficher...</label>
+				<label index="select_department_all">Tous</label>
+				<label index="last_first_name">###LAST_NAME###, ###FIRST_NAME###</label>
+				<label index="first_last_name">###FIRST_NAME### ###LAST_NAME###</label>
+				<label index="multiDept_separator">, </label>
+				<label index="gender_female">Femme</label>
+				<label index="gender_male">Homme</label>         
+	    </languageKey>
+
+        <languageKey index="nl" type="array">
+        </languageKey>
+        <languageKey index="cz" type="array">
+        </languageKey>
+        <languageKey index="pl" type="array">
+        </languageKey>
+  		<languageKey index="es" type="array"> 
+           	<label index="form_name_label">Apellido</label>
+           	<label index="form_firstname_label">Nombre</label>
+           	<label index="form_position_title_label">PosiciÃ“n TÃ–tulo</label>
+           	<label index="form_position_description_label">Campo de actividades</label>
+           	<label index="form_telephone_label">TelÃ©fono</label>
+           	<label index="form_shortdial_label">Marcada rÃ¡pida</label>
+           	<label index="form_email_label">Email</label>
+           	<label index="form_location_label">Planta</label>
+           	<label index="form_department_label">Departamento</label>
+           	<label index="form_team_label">Equipo</label>
+           	<label index="form_position_label">Puesto</label>
+           	<label index="form_role_label">ActuaciÃ“n</label>
+           	<label index="form_start_date_label">Comienzo de la actividad</label>
+           	<label index="form_biography_label">BiografÃ–a</label>
+           	<label index="form_news_label">Noticias</label>
+           	<label index="form_photo_main_label">Foto principal</label>
+           	<label index="form_photos_etc_label">Fotos otros</label>
+           	<label index="form_cellphone_label">MÃ“vil</label>
+           	<label index="form_cellphone_notify_label">(MÃ“vil)</label>
+       	    <label index="form_misc_label">diversos</label>
+        	    <label index="form_ges_label">AbreviaciÃ“n</label>
+        	    <label index="form_ges_notify_label">AbreviaciÃ“n</label>
+        	    <label index="form_address_label">DirecciÃ“n</label>
+        	    <label index="form_homework_label">Lugar de trabajo a casa</label>
+        	    <label index="form_zone_label">Provincia</label>
+        	    <label index="form_zip_label">C.P.</label>
+        	    <label index="form_country_label">PaÃ–s</label>
+        	    <label index="form_room_label">Sala</label>
+        	    <label index="form_room_notify_label">Sala</label>
+           	<label index="form_title_label">TÃ–tulo</label>
+  
+  			<label index="job_header">InformaciÃ“n de trabajo</label>
+  			<label index="contact_header">Informaciones de contacto</label>
+  			<label index="biography_header">InformaciÃ“n personal</label>
+  			<label index="news_header">Ultimas noticias</label>
+  
+  			<label index="sort_by">Ordenar por: </label>
+  			<label index="sortmenu1">Apellido</label>
+  			<label index="sortmenu2">Departamento</label>
+  			<label index="sortmenu3">Comienzo de la actividad</label>
+  			<label index="sortmenu4">Nombre</label>
+  			<label index="sortmenu5">EstÃ¡ndar</label>
+  			<label index="sortmenu6">EstÃ¡ndar</label>
+  			<label index="sortmenu7">FunciÃ“n</label>
+  			<label index="sortmenu8">PosiciÃ“n</label>
+  
+  			<label index="search_label">Busca: </label>
+  			<label index="search_department_label">Departamento: </label>
+  			<label index="search_position_label">PosiciÃ“n: </label>
+  			<label index="search_role_label">FunciÃ“n: </label>
+  			<label index="search_choose">--- todo ---</label>
+  			<label index="search_button">Buscar</label>
+  
+  			<label index="edit_btn">editar</label>
+  			<label index="delete_btn">borrar</label>
+  			<label index="new_btn">Entrada nueva</label>
+  			<label index="delete_confirm">Â¿Quiere borrar esta entrada?</label>
+  			<label index="save_btn">Guardar</label>
+  			<label index="back_btn">Volver a la lista de colaboradores</label>
+  			<label index="cancel_btn">Cancelar</label>
+  			<label index="select_staff_menu">Elegir colaborador...</label>
+  			<label index="updated_staff_page">PÃ¡gina de colaboradores fue actualizado</label>
+  			<label index="created_staff_page">PÃ¡gina de colaboradores fue creado</label>
+  			<label index="deleted_staff">PÃ¡gina de colaboradores fue borrado</label>
+  			<label index="blank_field">&amp;nbsp;</label>
+  			<label index="edit_info">Editar colaborador: </label>
+  			<label index="add_new_staff">Crear colaborador nuevo</label>
+  
+  			<label index="bad_email_format">Su correo electrÃ“nico no esta valida (email@donde.com)</label>
+  			<label index="bad_name">Su nombre tiene que tener al mÃ–nimo dos charcteres</label>
+  			<label index="bad_number1">Su </label>
+  			<label index="bad_number2"> unicamente puede contener nÃºmeros</label>
+  			<label index="bad_editor">No puede editar esta pÃ¡gina</label>
+  			<label index="bad_edit_form">Por el momento no puede editar esta pÃ¡gina</label>
+  			<label index="bad_delete_id">Demanda de borrar no esta valida</label>
+  			<label index="more_link">[mÃ¡s]</label>
+			<label index="date_format">%d-%m-%Y</label>  
+ 		</languageKey>
+        <languageKey index="si" type="array">
+        </languageKey>
+        <languageKey index="fi" type="array">
+        </languageKey>
+        <languageKey index="tr" type="array">
+        </languageKey>
+        <languageKey index="se" type="array">
+        </languageKey>
+        <languageKey index="pt" type="array">
+        </languageKey>
+        <languageKey index="ru" type="array">
+        </languageKey>
+        <languageKey index="hr" type="array">
+        </languageKey>
+		<languageKey index="gr" type="array">
+			<label index="form_name_label">Όνομα</label>
+			<label index="form_position_title_label">Τίτλος ιδιότητας</label>
+			<label index="form_position_description_label">Περιγραφή ιδιότητας</label>
+			<label index="form_telephone_label">Τηλεφωνικός αριθμός</label>
+			<label index="form_department_label">Τμήμα</label>
+			<label index="form_team_label">Ομάδα</label>
+			<label index="form_start_date_label">Ημερομηνία πρόσληψης</label>
+			<label index="form_biography_label">Βιογραφικό</label>
+			<label index="form_news_label">Νέα</label>
+			<label index="form_photo_main_label">Κύρια Φωτογραφία</label>
+			<label index="form_photos_etc_label">Επιπρόσθετες Φωτογραφίες</label>
+			<label index="form_cellphone_label">Κινητό Τηλέφωνο</label>
+			<label index="form_misc_label">Είναι Μέλος από</label>
+			<label index="form_fax_label">Φαξ #</label>
+			<label index="form_fax_notify_label">(φαξ)</label>
+			<label index="form_address_label">Διεύθυνση</label>
+			<label index="form_address2_label">Διεύθυνση #2</label>
+			<label index="form_city_label">Πόλη</label>
+			<label index="form_zone_label">Επαρχία</label>
+			<label index="form_zip_label">ΤΚ</label>
+			<label index="form_country_label">Χώρα</label>
+			<label index="form_map_label">Χάρτης</label>
+			<label index="form_feuser_label">Σύνδεσμος χρήστη</label>
+			<label index="job_header">Πληροφορίες εργασίας</label>
+			<label index="contact_header">Στοιχεία επικοινωνίας</label>
+			<label index="biography_header">Προσωπικές πληροφορίες</label>
+			<label index="news_header">Τελευταία νέα</label>
+			<label index="sort_by">Ταξινόμηση κατά:</label>
+			<label index="sortmenu1">Όνομα</label>
+			<label index="sortmenu2">Τμήμα</label>
+			<label index="sortmenu3">Ημερομηνία πρόσληψης</label>
+			<label index="sortmenu4">Επώνυμο</label>
+			<label index="sortmenu5">Προεπιλεγμένο</label>
+			<label index="sortmenu6">Προεπιλεγμένο</label>
+			<label index="search">Αναζήτηση:</label>
+			<label index="search_button">Μετάβαση</label>
+			<label index="edit_btn">τροποποίηση</label>
+			<label index="save_btn">Αποθήκευσε τις πληροφορίες σου</label>
+			<label index="back_btn">Επιστροφή στη λίστα του προσωπικού</label>
+			<label index="cancel_btn">Άκυρο</label>
+			<label index="add_btn">Προσθήκη νέου Μέλους</label>
+			<label index="edit_info">Τροποποίηση του προφίλ σου</label>
+			<label index="add_new_staff">Προσθήκη νέου Μέλους</label>
+			<label index="create_new_btn">Δημιουργία νέου Μέλους</label>
+			<label index="select_staff_menu">Επιλέξτε για να προβάλετε κάποιο μέλος...</label>
+			<label index="select_staff_add">Επιλέξτε για να μεταβείτε στη σελίδα κάποιου μέλους...</label>
+			<label index="select_staff_new">Δημιουργία νέου χρήστη</label>
+			<label index="updated_staff_page">Η σελίδα του προσωπου έχει αποθηκευτεί</label>
+			<label index="created_staff_page">Η σελίδα του προσωπου έχει δημιουργηθεί</label>
+			<label index="blank_field">&amp;nbsp;</label>
+			<label index="bad_email_format">Το email δεν είναι σε σωστή μορφή (email@where.com)</label>
+			<label index="bad_name">Το όνομά πρέπει να αποτελείται από τουλάχιστον δύο χαρακτήρες</label>
+			<label index="bad_editor">Δεν μπορείτε να τροποποιήσετε αυτήν την σελίδα</label>
+			<label index="bad_deleter">Δεν μπορείτε να διαγράψετε σελίδες προσωπικού</label>
+			<label index="bad_edit_form">Δεν μπορείτε να τροποποιήσετε</label>
+			<label index="bad_delete_form">Δεν μπορείτε να διαγράψετε</label>
+			<label index="more_link">[Περισσότερα]</label>
+			<label index="delete_btn">διαγραφή</label>
+			<label index="delete_confirm">Θέλετε οπωσδήποτε να διαγράψετε τη συγκεκριμένη καταχώρηση;</label>
+			<label index="deleted_staff">Η εγγραφή του προσωπικού διαγράφηκε</label>
+			<label index="bad_delete_id">Άκυρη εντολή διαγραφής</label>
+			<label index="btn_separator"></label>
+			<label index="label_separator">:</label>
+			<label index="date_format">%d-%m-%Y</label> 
+		</languageKey>
+        <languageKey index="br" type="array">
+        </languageKey>
+    </data>
+	<orig_hash type="array">
+		<languageKey index="gr" type="array">
+			<label index="form_name_label" type="integer">77521672</label>
+			<label index="form_position_title_label" type="integer">177431148</label>
+			<label index="form_position_description_label" type="integer">38746491</label>
+			<label index="form_telephone_label" type="integer">92248674</label>
+			<label index="form_department_label" type="integer">30506169</label>
+			<label index="form_team_label" type="integer">180898042</label>
+			<label index="form_start_date_label" type="integer">229865804</label>
+			<label index="form_biography_label" type="integer">152046707</label>
+			<label index="form_news_label" type="integer">231848472</label>
+			<label index="form_photo_main_label" type="integer">165022213</label>
+			<label index="form_photos_etc_label" type="integer">201111732</label>
+			<label index="form_cellphone_label" type="integer">28743393</label>
+			<label index="form_misc_label" type="integer">40297796</label>
+			<label index="form_address_label" type="integer">232242979</label>
+			<label index="form_address2_label" type="integer">61845519</label>
+			<label index="form_city_label" type="integer">92079470</label>
+			<label index="form_zone_label" type="integer">140252960</label>
+			<label index="form_zip_label" type="integer">240039386</label>
+			<label index="form_country_label" type="integer">93787849</label>
+			<label index="form_map_label" type="integer">74399392</label>
+			<label index="job_header" type="integer">88807201</label>
+			<label index="contact_header" type="integer">230615842</label>
+			<label index="biography_header" type="integer">156410607</label>
+			<label index="news_header" type="integer">10071984</label>
+			<label index="sort_by" type="integer">182534596</label>
+			<label index="sortmenu1" type="integer">125142819</label>
+			<label index="sortmenu2" type="integer">30506169</label>
+			<label index="sortmenu3" type="integer">73272664</label>
+			<label index="sortmenu4" type="integer">197726456</label>
+			<label index="sortmenu5" type="integer">128029197</label>
+			<label index="sortmenu6" type="integer">128029197</label>
+			<label index="search" type="integer">88010525</label>
+			<label index="edit_btn" type="integer">233397059</label>
+			<label index="save_btn" type="integer">222759624</label>
+			<label index="back_btn" type="integer">102068557</label>
+			<label index="cancel_btn" type="integer">245659783</label>
+			<label index="add_btn" type="integer">134807149</label>
+			<label index="edit_info" type="integer">16623629</label>
+			<label index="add_new_staff" type="integer">156927530</label>
+			<label index="create_new_btn" type="integer">96225208</label>
+			<label index="select_staff_menu" type="integer">238330744</label>
+			<label index="select_staff_add" type="integer">141867222</label>
+			<label index="select_staff_new" type="integer">195518827</label>
+			<label index="updated_staff_page" type="integer">205328608</label>
+			<label index="created_staff_page" type="integer">120718486</label>
+			<label index="blank_field" type="integer">214401424</label>
+			<label index="bad_email_format" type="integer">89701750</label>
+			<label index="bad_name" type="integer">136255191</label>
+			<label index="bad_editor" type="integer">157040212</label>
+			<label index="bad_deleter" type="integer">26901217</label>
+			<label index="bad_edit_form" type="integer">152009005</label>
+			<label index="bad_delete_form" type="integer">119583524</label>
+			<label index="more_link" type="integer">211582668</label>
+			<label index="delete_btn" type="integer">10071891</label>
+			<label index="delete_confirm" type="integer">172288179</label>
+			<label index="deleted_staff" type="integer">28799327</label>
+			<label index="bad_delete_id" type="integer">254660745</label>
+			<label index="btn_separator" type="integer">201519654</label>
+			<label index="label_separator" type="integer">237393042</label>
+			<label index="form_fax_label" type="integer">142453746</label>
+			<label index="form_fax_notify_label" type="integer">213242329</label>
+			<label index="form_feuser_label" type="integer">53495948</label>
+			<label index="search_button" type="integer">99644846</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="gr" type="array">
+			<label index="form_name_label">Name</label>
+			<label index="form_position_title_label">Position Title</label>
+			<label index="form_position_description_label">Position Description</label>
+			<label index="form_telephone_label">Phone #</label>
+			<label index="form_department_label">Department</label>
+			<label index="form_team_label">Team</label>
+			<label index="form_start_date_label">Start Date</label>
+			<label index="form_biography_label">Biography</label>
+			<label index="form_news_label">News</label>
+			<label index="form_photo_main_label">Main Photo</label>
+			<label index="form_photos_etc_label">Misc Photos</label>
+			<label index="form_cellphone_label">Cell Phone #</label>
+			<label index="form_misc_label">Miscellaneous Field</label>
+			<label index="form_address_label">Address</label>
+			<label index="form_address2_label">Address #2</label>
+			<label index="form_city_label">City</label>
+			<label index="form_zone_label">State/Province</label>
+			<label index="form_zip_label">Zip/Postal Code</label>
+			<label index="form_country_label">Country</label>
+			<label index="form_map_label">Map</label>
+			<label index="job_header">Job Info</label>
+			<label index="contact_header">Contact Info</label>
+			<label index="biography_header">Personal Info</label>
+			<label index="news_header">Latest News</label>
+			<label index="sort_by">Sort By:</label>
+			<label index="sortmenu1">Last Name</label>
+			<label index="sortmenu2">Department</label>
+			<label index="sortmenu3">Employment Date</label>
+			<label index="sortmenu4">First Name</label>
+			<label index="sortmenu5">Default</label>
+			<label index="sortmenu6">Default</label>
+			<label index="search">Search: </label>
+			<label index="edit_btn">edit</label>
+			<label index="save_btn">Save Your Info</label>
+			<label index="back_btn">Return to Staff Listing</label>
+			<label index="cancel_btn">Cancel</label>
+			<label index="add_btn">Add New Person</label>
+			<label index="edit_info">Edit Your Info</label>
+			<label index="add_new_staff">Add New Staff</label>
+			<label index="create_new_btn">Create New Staff</label>
+			<label index="select_staff_menu">Select Staff To View...</label>
+			<label index="select_staff_add">Select Staff To Link To...</label>
+			<label index="select_staff_new">Create New User</label>
+			<label index="updated_staff_page">The staff page has been updated</label>
+			<label index="created_staff_page">The staff record has been created</label>
+			<label index="blank_field">&amp;nbsp;</label>
+			<label index="bad_email_format">Your email is not formatted properly (email@where.com)</label>
+			<label index="bad_name">Your name needs to be at least two characters</label>
+			<label index="bad_editor">You cannot edit this page</label>
+			<label index="bad_deleter">You cannot delete staff pages</label>
+			<label index="bad_edit_form">You cannot edit this now</label>
+			<label index="bad_delete_form">You cannot delete this now</label>
+			<label index="more_link">[More]</label>
+			<label index="delete_btn">delete</label>
+			<label index="delete_confirm">Do you really want to delete this entry?</label>
+			<label index="deleted_staff">The staff entry has been deleted</label>
+			<label index="bad_delete_id">Invalid delete request</label>
+			<label index="btn_separator"> </label>
+			<label index="label_separator">: </label>
+			<label index="form_fax_label">Fax #</label>
+			<label index="form_fax_notify_label">(fax)</label>
+			<label index="form_feuser_label">FrontEnd User Link</label>
+			<label index="search_button">Go</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

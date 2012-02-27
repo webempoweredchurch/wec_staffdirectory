@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'wec_staffdirectory'</description>
+		<csh_table></csh_table>
+		<labelContext type="array">
+		</labelContext>		
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">WEC Staff Directory</label>
+			<label index="fe_users.tx_wecstaffdirectory_in">In Staff Directory</label>
+            <label index="fe_users.country">Country:</label>
+            <label index="fe_users.zone">State/Province:</label>
+            <label index="fe_users.first_name">First Name:</label>
+            <label index="fe_users.last_name">Last Name:</label>
+            <label index="fe_users.name">Name:</label>
+            <label index="fe_users.gender">Mr/Ms:</label>
+            <label index="fe_users.gender.I.0">Mr</label>
+            <label index="fe_users.gender.I.1">Ms</label>
+
+			/*----------------------------- DB FIELD NAMES ---------------------------------------*/
+			<label index="tx_wecstaffdirectory_info">Staff Info</label>
+			<label index="tx_wecstaffdirectory_info.feuser_id">Staff FrontEnd User</label>
+			<label index="tx_wecstaffdirectory_info.position_title">Position Title</label>
+			<label index="tx_wecstaffdirectory_info.position_description">Position Description</label>
+			<label index="tx_wecstaffdirectory_info.department">Department(s)</label>
+			<label index="tx_wecstaffdirectory_info.team">Team</label>
+			<label index="tx_wecstaffdirectory_info.start_date">Employment Start Date</label>
+			<label index="tx_wecstaffdirectory_info.biography">Biography / About</label>
+			<label index="tx_wecstaffdirectory_info.news">News / Updates</label>
+			<label index="tx_wecstaffdirectory_info.photo_main">Main Photo</label>
+			<label index="tx_wecstaffdirectory_info.photos_etc">Other Photos</label>
+			<label index="tx_wecstaffdirectory_info.cellphone">Cell Phone #</label>
+			<label index="tx_wecstaffdirectory_info.telephone">Phone #</label>
+			<label index="tx_wecstaffdirectory_info.misc">Miscellaneous</label>
+			<label index="tx_wecstaffdirectory_info.fax">Fax #</label>
+			<label index="tx_wecstaffdirectory_info.address">Address</label>
+			<label index="tx_wecstaffdirectory_info.address2">Address 2</label>
+			<label index="tx_wecstaffdirectory_info.city">City</label>
+			<label index="tx_wecstaffdirectory_info.zone">State</label>
+			<label index="tx_wecstaffdirectory_info.zip">Zip/Postal Code</label>
+			<label index="tx_wecstaffdirectory_info.country">Country</label>
+			<label index="tx_wecstaffdirectory_info.email">Email</label>
+			<label index="tx_wecstaffdirectory_info.display_order">Display Order</label>
+			<label index="tx_wecstaffdirectory_info.social_contact1">Twitter</label>
+			<label index="tx_wecstaffdirectory_info.social_contact2">Facebook</label>
+			<label index="tx_wecstaffdirectory_info.social_contact3">Linked In</label>
+			<label index="tx_wecstaffdirectory_department">Staff Department</label>
+			<label index="tx_wecstaffdirectory_department.department_name">Department Name</label>
+			<label index="tx_wecstaffdirectory_department.description">Department Description</label>
+			<label index="tx_wecstaffdirectory_department.parent_department">Parent Department</label>
+			<label index="tx_wecstaffdirectory_department.display_order">Display Order</label>
+			<label index="tx_wecstaffdirectory_department.department_none">None</label>
+
+			/*----------------------------- FLEX FORM ---------------------------------------*/
+			<label index="wec_staffdirectory.pi_flexform.sheet_main">Main</label>
+				<label index="wec_staffdirectory.pi_flexform.title">Title of Staff Directory</label>
+				<label index="wec_staffdirectory.pi_flexform.what_to_display">What To Display</label>
+				<label index="wec_staffdirectory.pi_flexform.show_department">Show Only Dept(s)- comma sep./exact name</label>
+				<label index="wec_staffdirectory.pi_flexform.show_department_dept">Show Only Department(s)</label>
+				<label index="wec_staffdirectory.pi_flexform.single_pid">Singleview Page Display (optional)</label>
+				<label index="wec_staffdirectory.pi_flexform.display_random">How Often To Display Random</label>
+				<label index="wec_staffdirectory.pi_flexform.back_pid">Listview Page To Return To (for Singleview)</label>
+				<label index="wec_staffdirectory.pi_flexform.template_file">Template File</label>
+				<label index="wec_staffdirectory.pi_flexform.template_reference">Template Reference (i.e., fileadmin/template/template.tmpl)</label>
+
+			<label index="wec_staffdirectory.pi_flexform.sheet_display">Display</label>
+				<label index="wec_staffdirectory.pi_flexform.sort_order">Default Sort Order</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.custom_backend_sorting">backend sorting</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.custom_display_order">display order field</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.last_name">last name</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.first_name">first name</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.name">name</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.department">department</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.start_date">start date</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.team">team</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.misc">misc field</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.city">city</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.zone">zone/state/province</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.zip">zip / postal code</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order.country">country</label>
+				<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc">Sort Order Direction?</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc.ascending">ascending</label>
+					<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc.descending">descending</label>
+				<label index="wec_staffdirectory.pi_flexform.sort_options">Show Sort Order Dropdown (none = no menu)</label>
+				<label index="wec_staffdirectory.pi_flexform.show_search">Show Search On Listing Page?</label>
+				<label index="wec_staffdirectory.pi_flexform.num_per_page">Number Per Page (0=all) </label>
+				<label index="wec_staffdirectory.pi_flexform.show_listheader">Show List Header (for list view only) </label>
+				<label index="wec_staffdirectory.pi_flexform.show_deptSelector">Show Department Selector </label>
+
+			<label index="wec_staffdirectory.pi_flexform.sheet_fields">Fields</label>
+				<label index="wec_staffdirectory.pi_flexform.directory_fields">Fields To Show For Staff List </label>
+				<label index="wec_staffdirectory.pi_flexform.personalpage_fields">Fields To Show For Staff Page </label>
+				<label index="wec_staffdirectory.pi_flexform.editpersonalpage_fields">Fields To Allow To Edit For Staff Page </label>
+
+			<label index="wec_staffdirectory.pi_flexform.sheet_admin">Admin</label>
+				<label index="wec_staffdirectory.pi_flexform.administrator_users">Administrator User(s) fe_users name/uid</label>
+				<label index="wec_staffdirectory.pi_flexform.administrator_groups">Administrator Group(s) fe_groups title/uid</label>
+				<label index="wec_staffdirectory.pi_flexform.staff_can_edit">Can Staff Edit Their Page?</label>
+				<label index="wec_staffdirectory.pi_flexform.staff_can_add">Can Staff Add A New Page?</label>
+				<label index="wec_staffdirectory.pi_flexform.staff_can_delete">Can Staff Delete A Page?</label>
+
+			/*--------------------------------------------------------------------*/
+
+		</languageKey>
+  		<languageKey index="de" type="array">
+  			<label index="tt_content.list_type_pi1">WEC Staff Directory</label>
+  
+  			/*----------------------------- DB FIELD NAMES ---------------------------------------*/
+  			<label index="tx_wecstaffdirectory_info">Mitarbeiter Info</label>
+  			<label index="tx_wecstaffdirectory_info.title">Titel</label>
+  			<label index="tx_wecstaffdirectory_info.name">Name</label>
+  			<label index="tx_wecstaffdirectory_info.firstname">Vorname</label>
+  			<label index="tx_wecstaffdirectory_info.telephone">Telefon</label>
+  			<label index="tx_wecstaffdirectory_info.shortdial">Kurzwahl</label>
+  			<label index="tx_wecstaffdirectory_info.email">Mail</label>
+  			<label index="tx_wecstaffdirectory_info.ges">GES-K&amp;uuml;rzel</label>
+  			<label index="tx_wecstaffdirectory_info.homework">Heimarbeitsplatz</label>
+  			<label index="tx_wecstaffdirectory_info.position_title">Position Titel</label>
+  			<label index="tx_wecstaffdirectory_info.position_description">Aufgabenbereich</label>
+  			<label index="tx_wecstaffdirectory_info.department">Abteilung(s)</label>
+  			<label index="tx_wecstaffdirectory_info.position">Position</label>
+  			<label index="tx_wecstaffdirectory_info.team">Team</label>
+  			<label index="tx_wecstaffdirectory_info.role">Funktion</label>
+  			<label index="tx_wecstaffdirectory_info.location">Stockwerk</label>
+  			<label index="tx_wecstaffdirectory_info.start_date">Beginn Besch&amp;auml;ftigung</label>
+  			<label index="tx_wecstaffdirectory_info.biography">Biografie</label>
+  			<label index="tx_wecstaffdirectory_info.news">News</label>
+  			<label index="tx_wecstaffdirectory_info.photo_main">Haupt-Foto</label>
+  			<label index="tx_wecstaffdirectory_info.photos_etc">Andere Fotos</label>
+  			<label index="tx_wecstaffdirectory_info.cellphone">Handynummer</label>
+  			<label index="tx_wecstaffdirectory_info.misc">diverses</label>
+  			<label index="tx_wecstaffdirectory_info.address">Adresse</label>
+  			<label index="tx_wecstaffdirectory_info.homework">Heimarbeitsplatz</label>
+  			<label index="tx_wecstaffdirectory_info.zone">Staat</label>
+  			<label index="tx_wecstaffdirectory_info.zip">PLZ</label>
+  			<label index="tx_wecstaffdirectory_info.country">Land</label>
+  			<label index="tx_wecstaffdirectory_info.display_order">Anzeige-Reihenfolge</label>
+  			<label index="tx_wecstaffdirectory_info.room">Raum</label>
+  
+  			<label index="tx_wecstaffdirectory_location">Stockwerk</label>
+  			<label index="tx_wecstaffdirectory_location.description">Beschreibung</label>
+			<label index="tx_wecstaffdirectory_location.number">Stockwerks-Nummer</label>
+  			<label index="tx_wecstaffdirectory_location.map">Karte</label>
+  
+  			<label index="tx_wecstaffdirectory_department">Abteilung</label>
+  			<label index="tx_wecstaffdirectory_department.description">Beschreibung</label>
+  
+  			<label index="tx_wecstaffdirectory_position">Position</label>
+  			<label index="tx_wecstaffdirectory_position.description">Beschreibung</label>
+  
+  			<label index="tx_wecstaffdirectory_team">Team</label>
+  			<label index="tx_wecstaffdirectory_team.description">Beschreibung</label>
+  
+  			<label index="tx_wecstaffdirectory_role">Funktion</label>
+  			<label index="tx_wecstaffdirectory_role.description">Beschreibung</label>
+  
+  
+  			/*----------------------------- FLEX FORM ---------------------------------------*/
+  			<label index="wec_staffdirectory.pi_flexform.sheet_main">Allgemein</label>
+  				<label index="wec_staffdirectory.pi_flexform.title">Titel des Mitarbeiterverzeichnisses</label>
+  				<label index="wec_staffdirectory.pi_flexform.what_to_display">Was anzeigen?</label>
+  				<label index="wec_staffdirectory.pi_flexform.show_department">nur folgende Abt. anzeigen (komma-getrennt)</label>
+  				<label index="wec_staffdirectory.pi_flexform.single_pid">Seite f&amp;uuml;r Single (optional)</label>
+  				<label index="wec_staffdirectory.pi_flexform.back_pid">R&amp;uuml;ckkehr-Seite (for SINGLE)</label>
+  				<label index="wec_staffdirectory.pi_flexform.template_file">Template-Datei</label>
+  
+  			<label index="wec_staffdirectory.pi_flexform.sheet_display">Anzeige</label>
+  				<label index="wec_staffdirectory.pi_flexform.sort_order">Standard-Sortierreihenfolge</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.last_name">Name</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.department">Abteilung</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.start_date">Startdatum</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.firstname">Vorname</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.custom_backend_sorting">Backend Sortierung</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.custom_display_order">Anzeige-Reihenfolge</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.position">Position</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order.role">Funktion</label>
+  
+  				<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc">Sortierreihenfolge</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc.ascending">aufsteigend</label>
+  					<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc.descending">absteigend</label>
+  
+  				<label index="wec_staffdirectory.pi_flexform.sort_options">Dropdown f&amp;uuml;r Sortierreihenfolge anzeigen (keine Auswahl = kein Men&amp;uuml;)</label>
+  				<label index="wec_staffdirectory.pi_flexform.num_per_page">Anzahl pro Seite (0=alle) </label>
+  
+  			<label index="wec_staffdirectory.pi_flexform.sheet_fields">Felder</label>
+  				<label index="wec_staffdirectory.pi_flexform.directory_fields">Felder anzeigen f&amp;uuml;r Mitarbeiterliste </label>
+  				<label index="wec_staffdirectory.pi_flexform.personalpage_fields">Felder anzeigen f&amp;uuml;r Mitarbeiterseite </label>
+  				<label index="wec_staffdirectory.pi_flexform.editpersonalpage_fields">Bearbeitung erlauben f&amp;uuml;r folgende Felder </label>
+  
+  			<label index="wec_staffdirectory.pi_flexform.sheet_admin">Administration</label>
+  				<label index="wec_staffdirectory.pi_flexform.administrator_group">Administrator FE Benutzername/uid(komma-getrennt)</label>
+  				<label index="wec_staffdirectory.pi_flexform.administrator_groups">Administrator Gruppe FE Gruppenname/uid(komma-getrennt)</label>
+  				<label index="wec_staffdirectory.pi_flexform.staff_can_edit">Can Staff Edit Their Page?</label>
+  
+  			/*--------------------------------------------------------------------*/
+  
+  		</languageKey>		
+		<languageKey index="dk" type="array">
+			<label index="tt_content.list_type_pi1">WEC personale adresseliste</label>
+			<label index="fe_users.tx_wecstaffdirectory_in">I personale adresselisten</label>
+			<label index="fe_users.country">Land:</label>
+			<label index="fe_users.zone">Stat/provins:</label>
+			<label index="fe_users.first_name">Fornavn:</label>
+			<label index="fe_users.last_name">Efternavn:</label>
+			<label index="fe_users.name">Navn:</label>
+			<label index="fe_users.gender">Hr/Fru:</label>
+			<label index="fe_users.gender.I.0">Hr</label>
+			<label index="fe_users.gender.I.1">Fru</label>
+			<label index="tx_wecstaffdirectory_info">Personale info</label>
+			<label index="tx_wecstaffdirectory_info.feuser_id">Personale FrontEnd-bruger</label>
+			<label index="tx_wecstaffdirectory_info.position_title">Stillingstitel</label>
+			<label index="tx_wecstaffdirectory_info.position_description">Stillingsbeskrivelse</label>
+			<label index="tx_wecstaffdirectory_info.department">Afdeling</label>
+			<label index="tx_wecstaffdirectory_info.team">Team</label>
+			<label index="tx_wecstaffdirectory_info.start_date">Dato for ansÃ¦ttelsens start</label>
+			<label index="tx_wecstaffdirectory_info.biography">Biografi / Om</label>
+			<label index="tx_wecstaffdirectory_info.news">Nyt / Opdateringer</label>
+			<label index="tx_wecstaffdirectory_info.photo_main">PrimÃ¦r foto</label>
+			<label index="tx_wecstaffdirectory_info.photos_etc">Andre fotos</label>
+			<label index="tx_wecstaffdirectory_info.cellphone">Mobiltelefon</label>
+			<label index="tx_wecstaffdirectory_info.telephone">Telefon</label>
+			<label index="tx_wecstaffdirectory_info.misc">Diverse</label>
+			<label index="tx_wecstaffdirectory_info.fax">Fax</label>
+			<label index="tx_wecstaffdirectory_info.address">Adresse</label>
+			<label index="tx_wecstaffdirectory_info.address2">Adresse2</label>
+			<label index="tx_wecstaffdirectory_info.city">By</label>
+			<label index="tx_wecstaffdirectory_info.zone">Stat</label>
+			<label index="tx_wecstaffdirectory_info.zip">Postnummer</label>
+			<label index="tx_wecstaffdirectory_info.country">Land</label>
+			<label index="tx_wecstaffdirectory_info.email">Email</label>
+			<label index="tx_wecstaffdirectory_info.display_order">VisningsrÃ¦kkefÃ¸lge</label>
+			<label index="wec_staffdirectory.pi_flexform.sheet_main">PrimÃ¦r</label>
+			<label index="wec_staffdirectory.pi_flexform.title">Titel pÃ¥ adresselisten</label>
+			<label index="wec_staffdirectory.pi_flexform.what_to_display">Hvad der vises</label>
+			<label index="wec_staffdirectory.pi_flexform.show_department">Vis kun afdeling(er)- kommasep./prÃ¦cis navn</label>
+			<label index="wec_staffdirectory.pi_flexform.single_pid">Enkeltside visning (valgfri)</label>
+			<label index="wec_staffdirectory.pi_flexform.back_pid">Returside (for enkelt enkeltside)</label>
+			<label index="wec_staffdirectory.pi_flexform.template_file">Skabelonfil</label>
+			<label index="wec_staffdirectory.pi_flexform.sheet_display">Vis</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order">Standard rÃ¦kkefÃ¸lge</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order.last_name">efternavn</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order.department">afdeling</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order.start_date">startdato</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order.first_name">fornavn</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order.custom_backend_sorting">backend rÃ¦kkefÃ¸lge</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order.custom_display_order">vis felt for rÃ¦kkefÃ¸lge</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc">Retning for rÃ¦kkefÃ¸lge</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc.ascending">stigende</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_order_ascdesc.descending">faldende</label>
+			<label index="wec_staffdirectory.pi_flexform.sort_options">Vis dropdown for retning for rÃ¦kkefÃ¸lge (ingen = ingen menu)</label>
+			<label index="wec_staffdirectory.pi_flexform.show_search">Vis SÃ¸g pÃ¥ listesiden</label>
+			<label index="wec_staffdirectory.pi_flexform.num_per_page">Antal per side (0=alle)</label>
+			<label index="wec_staffdirectory.pi_flexform.sheet_fields">Felter</label>
+			<label index="wec_staffdirectory.pi_flexform.directory_fields">Synlige felter pÃ¥ listevisning</label>
+			<label index="wec_staffdirectory.pi_flexform.personalpage_fields">Synlige felter pÃ¥ sidevisning</label>
+			<label index="wec_staffdirectory.pi_flexform.editpersonalpage_fields">Redigerbare felter pÃ¥ sidevisning</label>
+			<label index="wec_staffdirectory.pi_flexform.sheet_admin">Admin</label>
+			<label index="wec_staffdirectory.pi_flexform.administrator_users">Administrator bruger(e)s fe_user navn/uid</label>
+			<label index="wec_staffdirectory.pi_flexform.administrator_groups">Administrator gruppe(r)s fe_group navn/uid</label>
+			<label index="wec_staffdirectory.pi_flexform.staff_can_edit">Kan personale redigere deres egen side?</label>
+			<label index="wec_staffdirectory.pi_flexform.staff_can_add">Kan personale oprette en side?</label>
+			<label index="wec_staffdirectory.pi_flexform.staff_can_delete">Kan personale slette en side?</label>
+		</languageKey>
+        <languageKey index="no" type="array">
+	  	</languageKey>
+        <languageKey index="it" type="array">
+	  	</languageKey>
+        <languageKey index="fr" type="array">
+	  	</languageKey>
+        <languageKey index="nl" type="array">
+	  	</languageKey>
+        <languageKey index="cz" type="array">
+	  	</languageKey>
+        <languageKey index="pl" type="array">
+	  	</languageKey>
+        <languageKey index="si" type="array">
+	  	</languageKey>
+	    <languageKey index="fi" type="array">
+	  	</languageKey>
+        <languageKey index="tr" type="array">
+	  	</languageKey>
+        <languageKey index="se" type="array">
+	  	</languageKey>
+        <languageKey index="pt" type="array">
+	  	</languageKey>	
+        <languageKey index="ru" type="array">
+	  	</languageKey>
+	    <languageKey index="hr" type="array">
+	  	</languageKey>
+	    <languageKey index="gl" type="array">
+	  	</languageKey>			
+        <languageKey index="br" type="array">
+	  	</languageKey>								
+	</data>
+</T3locallang>

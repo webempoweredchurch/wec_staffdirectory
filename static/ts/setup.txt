@@ -1,0 +1,445 @@
+includeLibs.ts_wecstaffdirectory = EXT:wec_staffdirectory/pi1/class.tx_wecstaffdirectory_pi1.php
+
+[userFunc = user_isStaffDirectoryNotCached()] 
+plugin.tx_wecstaffdirectory_pi1 = USER_INT
+[global]
+
+plugin.tx_wecstaffdirectory_pi1 {
+    general_stdWrap {
+       parseFunc < tt_content.text.20.parseFunc
+    }
+
+	templateFile 		= {$plugin.tx_wecstaffdirectory_pi1.templateFile}
+	baseCSSFile			= 
+	cssFile 			= {$plugin.tx_wecstaffdirectory_pi1.cssFile}
+	
+  	totalWidth 			= {$plugin.tx_wecstaffdirectory_pi1.totalWidth}
+	staffListWidth		= {$plugin.tx_wecstaffdirectory_pi1.staffListWidth}
+	staffListHeight		= {$plugin.tx_wecstaffdirectory_pi1.staffListHeight}
+	staffPageWidth		= {$plugin.tx_wecstaffdirectory_pi1.staffPageWidthidth}
+
+  	staffListingBackColor 	= {$plugin.tx_wecstaffdirectory_pi1.staffListingBackColor}
+	staffListingBackColor2	= {$plugin.tx_wecstaffdirectory_pi1.staffListingBackColor2}
+	staffPageBackColor		= {$plugin.tx_wecstaffdirectory_pi1.staffPageBackColor}
+
+  	formWidth 			= {$plugin.tx_wecstaffdirectory_pi1.formWidth}
+  	formLabelWidth 		= {$plugin.tx_wecstaffdirectory_pi1.formLabelWidth}
+  	formInputWidth 		= {$plugin.tx_wecstaffdirector
+  	formTextAreaHeight 	= {$plugin.tx_wecstaffdirectory_pi1.formTextAreaHeight}
+  	formBackColor 		= {$plugin.tx_wecstaffdirectory_pi1.formBackColor}
+  	formColor 			= {$plugin.tx_wecstaffdirectory_pi1.formColor}
+
+  	imageWidth			= {$plugin.tx_wecstaffdirectory_pi1.imageWidth}
+  	imageHeight			= {$plugin.tx_wecstaffdirectory_pi1.imageHeight}
+  	smallImageWidth		= {$plugin.tx_wecstaffdirectory_pi1.smallImageWidth}
+  	smallImageHeight	= {$plugin.tx_wecstaffdirectory_pi1.smallImageHeight}
+  	etcImageWidth		= {$plugin.tx_wecstaffdirectory_pi1.etcImageWidth}
+  	etcImageHeight		= {$plugin.tx_wecstaffdirectory_pi1.etcImageHeight}
+
+  	imagePhotoBlank		= {$plugin.tx_wecstaffdirectory_pi1.imagePhotoBlank}
+  	imagePhotoBlank2	= {$plugin.tx_wecstaffdirectory_pi1.imagePhotoBlank2}
+  	emailIcon			= {$plugin.tx_wecstaffdirectory_pi1.emailIcon}
+
+	sortFieldForDept	= {$plugin.tx_wecstaffdirectory_pi1.sortFieldForDept}
+	useFEPhoto			= {$plugin.tx_wecstaffdirectory_pi1.useFEPhoto}
+	altImagePath		= {$plugin.tx_wecstaffdirectory_pi1.altImagePath}
+	social_contact1Icon	= {$plugin.tx_wecstaffdirectory_pi1.social_contact1Icon}
+	social_contact2Icon	= {$plugin.tx_wecstaffdirectory_pi1.social_contact2Icon}
+	social_contact3Icon	= {$plugin.tx_wecstaffdirectory_pi1.social_contact3Icon}
+	
+	multiplePluginsPerPage	= {$plugin.tx_wecstaffdirectory_pi1.multiplePluginsPerPage}
+
+ 	main_photo = IMAGE
+ 	main_photo.file {
+ 		height = {$plugin.tx_wecstaffdirectory_pi1.imageHeight}
+ 		width = {$plugin.tx_wecstaffdirectory_pi1.imageWidth}
+ 		quality = 80
+ 	}
+ 	main_photo_small = IMAGE
+ 	main_photo_small.file {
+ 		width = {$plugin.tx_wecstaffdirectory_pi1.smallImageWidth}
+ 		height = {$plugin.tx_wecstaffdirectory_pi1.smallImageHeight}
+ 		quality = 70
+ 	}
+ 	photos_etc = IMAGE
+ 	photos_etc.file {
+ 		width = {$plugin.tx_wecstaffdirectory_pi1.etcImageWidth}
+ 		height = {$plugin.tx_wecstaffdirectory_pi1.etcImageHeight}
+ 		quality = 80
+ 	}
+
+	social_contact1 = COA
+	social_contact1 {
+		10 = IMAGE
+		10 {
+			file = {$plugin.tx_wecstaffdirectory_pi1.social_contact1Icon}
+			width = 16
+			height = 16
+			stdWrap.dataWrap = <a href="http://twitter.com/{field : social_contact1}"> | </a>
+		}
+	}
+	
+	social_contact2 = COA
+	social_contact2 {
+		10 = IMAGE
+		10 {
+			file = {$plugin.tx_wecstaffdirectory_pi1.social_contact2Icon}
+			width = 16
+			height = 16
+			stdWrap.dataWrap = <a href="http://facebook.com/people/@/{field : social_contact2}"> | </a>
+		}		
+	}	
+	
+	social_contact3 = COA
+	social_contact3 {
+		10 = IMAGE
+		10 {
+			file = {$plugin.tx_wecstaffdirectory_pi1.social_contact3Icon}
+			width = 16
+			height = 16
+			stdWrap.dataWrap = <a href="http://linkedin.com/pub/{field : social_contact3}"> | </a>
+		}
+	}	
+	
+	biographyShort_stdWrap.crop = 350|...|1
+	newsShort_stdWrap.crop = 350|...|1
+
+    # substitute pagetitle with title of staff page
+    substitutePagetitle = 1
+
+	isLoaded = yes
+	isOldTemplate = 1
+	
+	map {
+		# @description	API Key for Google Maps.
+		# @see	http://www.google.com/apis/maps/signup.html
+		apiKey =
+		
+		# @description	Width of the map.
+		mapWidth = 300
+		
+		# @description	Height of the map.
+		mapHeight = 300
+		
+		# @description	Possible control sizes for the map.	 Options are large, small, zoomonly, and none.
+		controlSize = small
+		
+		# @description	Boolean defining whether overview map should be shown.
+		showOverviewMap = 0
+		
+		# @description	Boolean defining whether the map type control should be shown.
+		showMapType = 0
+		
+		# @description	Boolean definine whether the scale should be shown.
+		showScale = 0
+		
+		# @description	Boolean defining whether the info window should be opened when the page loads.
+		showInfoOnLoad = 0
+		
+		# @description	Boolean defining whether directions should be available.
+		showDirections = 1
+		
+		# @description	Boolean defining whether written directions should be shown in addition to the map.
+		showWrittenDirections = 1
+		
+		# @description	Boolean defining whether an address should be prefilled for logged in users.
+		prefillAddress = 1
+		
+		# @description	Default zoom level. If not set, autozoom will be used.
+		zoomLevel = 
+		
+		# @description	Default center latitude. If not set, autocenter will be used.
+		centerLat = 
+		
+		# @description	Default center longitude. If not set, autocenter will be used.
+		centerLong = 
+	}
+}
+
+plugin.tx_wecstaffdirectory_pi1._CSS_DEFAULT_STYLE (
+/*-------------------------- STAFF DIRECTORY STYLES ---------------------------*/
+.tx-wecstaffdirectory-pi1 {
+	font-family: 	Arial, Tahoma, Verdana, "Times New Roman";
+	font-size:		12px;
+}
+.tx-wecstaffdirectory-content {
+	width:			{$plugin.tx_wecstaffdirectory_pi1.totalWidth};
+    margin: 		2px;
+}
+.tx-wecstaffdirectory-header {
+	float:			left;
+	font-size:		14px;
+	font-weight:	bold;
+	padding:		0px;
+	padding-top:	8px;
+	padding-bottom: 3px;
+	margin:			0px;
+	margin-top:		8px;
+	width:			100%;
+	clear:			both;
+}
+
+.tx-wecstaffdirectory-title {
+	display:		block;
+	font-size:		16px;
+	font-weight:	bold;
+	text-align:		center;
+	margin:			0px auto;
+	width:			100%;
+}
+.tx-wecstaffdirectory-responseMsg {
+	display:		block;
+	font-weight:	bold;
+	font-size:		105%;
+	color: 			#F02020;
+	padding:		0px;
+	text-align: 	center;
+	margin:			0px auto;
+	margin-top: 	4px;
+	margin-bottom: 	8px;
+	width:			100%;	
+}
+.tx-wecstaffdirectory-errorText {
+	display:		block;
+	color:			#FF2020;
+	text-align:		center;
+	font-size:		105%;
+	font-weight:	bold;
+	width:			100%;	
+}
+.tx-wecstaffdirectory-fullWidth {
+	width: 100%;
+}
+.tx-wecstaffdirectory-fullWidthCentered {
+	width: 		100%;
+	margin: 	0px auto;
+	text-align: center;
+}
+.tx-wecstaffdirectory-stafflist, .tx-wecstaffdirectory-staffpage, .tx-wecstaffdirectory-staffrandom {
+	display:	block;
+	font-size:	12px;
+	padding:	2px;
+	margin:		1px;
+}
+.tx-wecstaffdirectory-staffpage {
+	width:		{$plugin.tx_wecstaffdirectory_pi1.staffPageWidth};
+	background-color: {$plugin.tx_wecstaffdirectory_pi1.staffPageBackColor}
+}
+.tx-wecstaffdirectory-stafflist {
+	width:		{$plugin.tx_wecstaffdirectory_pi1.staffListWidth};
+	height:		{$plugin.tx_wecstaffdirectory_pi1.staffListHeight};
+}
+
+.tx-wecstaffdirectory-staffpage a, .tx-wcstaffdirectory-stafflist a {
+	text-decoration: none;
+}
+
+.tx-wecstaffdirectory-random {
+	width:	200px;
+	height:	200px;
+}
+
+.tx-wecstaffdirectory-stafflist-column {
+	float:		left;
+	width:		48%;
+	height:		125px;
+}
+.tx-wecstaffdirectory-stafflist div.leftColumn {
+	float: left;
+	display: box;
+	width:	30%;
+}
+.tx-wecstaffdirectory-stafflist div.rightColumn {
+	float: left;
+	display: box;
+	width:	65%;
+	padding-left: 4px;
+}
+
+.tx-wecstaffdirectory-stafflist .float-med 	{ float:left; width:15%; padding-left:5px; line-height:1.4em;}
+.tx-wecstaffdirectory-stafflist .float-lg 	{ float:left; width:20%; padding-left:5px; line-height:1.4em;}
+.tx-wecstaffdirectory-stafflist .float-xlg 	{ float:left; width:25%; padding-left:5px; line-height:1.4em;}
+.tx-wecstaffdirectory-stafflist .float-xxlg { float:left; width:30%; padding-left:5px;line-height:1.4em; }
+.tx-wecstaffdirectory-stafflist .float-sm 	{ float:left; width:10%; padding-left:5px; line-height:1.4em;}
+.tx-wecstaffdirectory-stafflist .float-xsm 	{ float:left; width:5%; padding-left:5px; line-height:1.4em;}
+.tx-wecstaffdirectory-stafflist .float-photo { float:left; display:box; width:30%; padding-right:10px; }
+.tx-wecstaffdirectory-stafflist .header 	{ font-weight:bold;font-size:110%; }
+
+.tx-wecstaffdirectory-stafflist .fullwidth 	{ width:100%; padding-bottom:2px;}
+.tx-wecstaffdirectory-stafflist .smText  	{ font-size:11px; }
+.tx-wecstaffdirectory-stafflist .medText 	{ font-size:12px; }
+.tx-wecstaffdirectory-stafflist .lgText  	{ font-size:14px; }
+.tx-wecstaffdirectory-stafflist .xlgText  	{ font-size:16px; }
+.tx-wecstaffdirectory-stafflist .isBold  	{ font-weight:bold; }
+.tx-wecstaffdirectory-stafflist .gutter  	{ float:left; display:box; width:100%;}
+.listAlternatingColor1    	{ background-color:{$plugin.tx_wecstaffdirectory_pi1.staffListingBackColor};}
+.listAlternatingColor2    	{ background-color:{$plugin.tx_wecstaffdirectory_pi1.staffListingBackColor2};}
+
+.tx-wecstaffdirectory-listheader {
+	border-bottom: 	2px solid #888;
+	font-size:		11px;
+}
+.tx-wecstaffdirectory-staffpage .photo {
+	display:block;
+	float:left;
+	padding-right: 8px;
+}
+.tx-wecstaffdirectory-staffpage .topmenu {
+	display: 	block;
+	float: 		left;	
+	width:		65%;
+	text-align:right;
+	padding:	0px;
+	margin:		0px;
+}
+.tx-wecstaffdirectory-staffpage .topmenu .sep {
+	padding-top: 6px;
+}
+.tx-wecstaffdirectory-staffpage .maincontent {
+	display: 	block;
+	float: 		left;	
+	width:		65%;
+	padding:	0px;
+}
+.tx-wecstaffdirectory-staffpage .fullwidth, .tx-wecstaffdirectory-staffpage .fullwidth-centered {
+	display: 	block;
+	float: 		left;
+	width:		95%;
+	clear:		both;
+	padding:	0px;
+}
+.tx-wecstaffdirectory-staffpage .fullwidth-centered { 
+	text-align:	center;
+	margin:		0px auto;
+}
+.deptHeader {
+	float:		left;
+	width:		100%;
+	padding:	2px;
+	margin-bottom: 2px;
+	margin-top:  8px;
+	border-bottom: 1px solid #888;
+	font-size:	16px;
+	font-weight:bold;
+}
+.deptHeader .title {
+	float:		left;
+	font-size:	16px;
+	font-weight:bold;
+	padding-left: 10px;
+}
+.deptHeader .image {
+	float:		left;
+	padding-right: 10px;
+}
+.deptHeader .description {
+	float:		left;
+	font-size:	12px;
+	font-weight:normal;
+	padding-left:10px;
+	padding-top:3px;
+}
+.tx-wecstaffdirectory-fieldHeader {
+	display:		block;
+	float:			left;
+	width:			100%;
+	font-weight:	bold;
+	font-size:		14px;
+	margin-top:		8px;
+	margin-bottom:	2px;
+}
+.tx-wecstaffdirectory-fieldHeaderLarge {
+	font-size:		18px;
+	font-weight:	bold;
+}
+.tx-wecstaffdirectory-fieldLabel {
+	display:		block;
+	float:			left;
+	width:			35%;
+	padding-left:	8px;
+	padding-bottom: 2px;
+	clear:			left;
+}
+.tx-wecstaffdirectory-fieldDescription {
+	display:		block;
+	float:			left;
+	width:			60%;
+	padding-bottom: 2px;
+}
+.tx-wecstaffdirectory-fieldDescriptionLarge {
+	display:		block;
+	float:			left;
+	width:			90%;
+	padding-bottom: 2px;
+	padding-left:	8px;
+}
+.tx-wecstaffdirectory-spacer {
+	clear:			both;
+	line-height:	0.1em;
+	height:			0.1em;
+}
+.pageLink {
+	font-size:		12px;
+	padding:		0px;
+	margin:			0px;
+	margin-top:		4px;
+	margin-right:	10px;
+}
+.tx-wecstaffdirectory-form .button, .tx-wecstaffdirectory-content .button {
+	font-size:		12px;
+	clear:			both;
+	padding:		4px;
+	text-align:		center;
+	margin:			0px auto;
+}
+.tx-wecstaffdirectory-form {
+	font-size: 		12px;
+	font-family: 	Arial, Tahoma, "Trebuchet MS", Georgia, sans-serif;
+	width: 		{$plugin.tx_wecstaffdirectory_pi1.formWidth};
+	background-color: {$plugin.tx_wecstaffdirectory_pi1.formBackColor};
+	color:		{$plugin.tx_wecstaffdirectory_pi1.formColor};
+	border: 	1px solid #333;
+	margin:		0px auto;
+	padding:	4px;
+    padding-bottom: 25px;
+    margin-top:	5px;
+    margin-bottom:5px;
+}
+.tx-wecstaffdirectory-form div.header {
+	text-align: center; font-size: 125%; font-weight:bold; padding: 6px;
+}
+.tx-wecstaffdirectory-form div.inputFormRow {
+	clear: both;  margin:0px; padding:0px; padding-top: 2px;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.label {
+	float: left;  width: {$plugin.tx_wecstaffdirectory_pi1.formLabelWidth}; text-align: right;  padding-top:3px;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.textacross {
+	float: left;  width: {$plugin.tx_wecstaffdirectory_pi1.formWidth};  text-align: center;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.bottomrow {
+	float: left;  width: {$plugin.tx_wecstaffdirectory_pi1.formWidth};  text-align: center; padding-top:8px; padding-bottom:8px;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.inputBox {
+	float: right; width: {$plugin.tx_wecstaffdirectory_pi1.formInputWidth}; text-align:left;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.inputBox input {
+	width: 95%;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.inputBox .inputMedium {
+	width: 150px;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.inputBox .inputShort {
+	width: 90px;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.inputBox textarea {
+	 width:	95%;	height:{$plugin.tx_wecstaffdirectory_pi1.formTextAreaHeight};
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.inputBox textarea.high {
+	 width:	95%;	height:100px;
+}
+.tx-wecstaffdirectory-form div.inputFormRow span.inputBox input.button {
+	 width:	100px;
+}
+) // END CSS_DEFAULT_STYLE
+
